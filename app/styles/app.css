@@ -1,0 +1,54 @@
+.main {
+  padding-top: 8em !important;
+}
+
+.ui.grid.page {
+  margin-bottom: 3em;
+}
+
+body {
+  overflow: visible;
+  height: 100%;
+  overflow-y: scroll;
+  flex-direction: column;
+  display: flex;
+}
+
+body > div[class*='ember-view'] {
+  flex: 1;
+}
+
+.text-centered {
+  text-align: center !important;
+}
+
+.center {
+  text-align: center;
+}
+
+.huge.header {
+  padding-top: 1em;
+}
+
+.pull-right {
+  float: right;
+}
+
+.right {
+  text-align: right;
+}
+
+.menu-button {
+  padding: 5px !important;
+  margin: 5px !important;
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.ui.basic.button.menu-button {
+  box-shadow: 0 0 0 !important;
+}
+
+.ui.menu .item:before {
+  background: none;
+}

@@ -1,0 +1,25 @@
+{{#ui-sidebar class="left inverted vertical menu" mobileTransition="overlay" transition="overlay" context=element id="menu"  }}
+
+    <span {{action 'cerrarMenu'}}>
+      {{ebit-secciones-del-menu}}
+    </span>
+
+{{/ui-sidebar}}
+
+<div class="pusher">
+
+  <div class="ui fixed menu navbar">
+    <div class="ui basic button menu-button" {{action 'abrirMenu'}}>
+      <i class="content icon"></i>
+    </div>
+  </div>
+
+  <div class="ui page grid main">
+    <div class="row">
+      <div class="column">
+        {{outlet}}
+      </div>
+    </div>
+  </div>
+
+</div>
