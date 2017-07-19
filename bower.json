@@ -1,6 +1,7 @@
 {
   "name": "enjambrebit2017",
   "dependencies": {
-    "semantic-ui": "^2.2.11"
+    "semantic-ui": "^2.2.11",
+    "remodal": "1.1.0"
   }
 }
