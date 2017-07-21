@@ -20,7 +20,9 @@ module.exports = function(defaults) {
   // along with the exports of each module as its value.
 
   app.import("vendor/jquery.themepunch.plugins.min.js");
-  app.import("vendor/jquery.isotope.min.js");
+  app.import('bower_components/isotope/dist/isotope.pkgd.min.js');
+  app.import('bower_components/imagesloaded/imagesloaded.pkgd.min.js');
+  app.import('bower_components/isotope-fit-columns/fit-columns.js');
 
   return app.toTree();
 };

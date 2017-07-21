@@ -1,17 +1,19 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+    tagName: "",
     didInsertElement(){
-    var $container = $('.lightbox-wrapper .items');
-    $container.imagesLoaded(function () {
-        $container.isotope({
-            itemSelector: '.lightbox-wrapper .item',
-            layoutMode: 'fitRows'
-        });
+    var $container = $('.isotope-grid');
+    $container.imagesLoaded(function() {
+      $container.isotope({
+        itemSelector: '.grid-item',
+        layoutMode: 'fitRows'
+      });
     });
-    $('.lightbox-wrapper .filter li a').click(function () {
 
-        $('.lightbox-wrapper .filter li a').removeClass('active');
+    $('.isotope-filter .filter li a').click(function () {
+
+        $('.isotope-filter .filter li a').removeClass('active');
 
         $(this).addClass('active');
 
