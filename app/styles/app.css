@@ -77,6 +77,20 @@ body > div[class*='ember-view'] {
   border-bottom: 2px solid rgb(220, 0, 0);
 }
 
+.ui.right.menu {
+  border: 0;
+  box-shadow: none;
+}
+
+.ui.right.menu a.item {
+  color: #666;
+}
+
+.ui.right.menu a.item:hover {
+  color: rgb(220, 0, 0);
+  background: none;
+}
+
 .ebit-section-bg {
   display: block;
   width: 100%;
