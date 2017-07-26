@@ -153,6 +153,88 @@ body > div[class*='ember-view'] {
         display: none;
 }
 
+.thumbs {
+    margin-left: -12px;
+    margin-bottom: -12px;
+    *zoom: 1;
+}
+.thumbs:before,
+.thumbs:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.thumbs:after {
+    clear: both
+}
+.thumbs div {
+    float: left;
+    min-height: 1px;
+    position: relative;
+}
+.thumbs div img {
+    display: block;
+    width: 100%;
+}
+.thumbs div a,
+.thumbs div a img {
+    display: block;
+    position: relative;
+}
+.thumbs div a {
+    overflow: hidden
+}
+.thumbs div a .overlay {
+    opacity: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    height: 100%;
+    position: absolute;
+    text-decoration: none;
+    width: 100%;
+    z-index: 100;
+    background: rgba(180,0,0,0.85);
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+}
+.thumbs div a:hover .overlay {
+    opacity: 1;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.thumbs div a .overlay h4 {
+    margin: 0;
+    color: #fff;
+}
+.thumbs div a .overlay .info {
+    position: absolute;
+    left: 0;
+    top: -105px;
+    z-index: 2;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    padding: 25px;
+}
+.thumbs div a:hover .overlay .info {
+    top: 0!important
+}
+.thumbs div a .overlay span {
+    font-size: 14px;
+    font-style: italic;
+    color: #ddd;
+}
+
+.portfolio-thumb-title {
+  position: absolute;
+    display: block;
+    bottom: 10px;
+    right: 9px;
+}
+
 .isotope,
 .isotope .item {
     -webkit-transition-duration: 0.8s;

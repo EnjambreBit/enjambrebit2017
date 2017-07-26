@@ -1,5 +1,15 @@
-<li class="item thumb {{type}}">
-  <div class="content work-item-content">
+<div class="grid-item thumb {{type}}">
+  <a href="#" class="view" title="{{title}}">
+    <div class="overlay">
+  		<div class="info">
+  			<h4>{{title}}</h4>
+  			<br>
+  			<span>{{description}}</span>
+  		</div>
+  		<!-- /.info -->
+  	</div>
+  	<!-- /.overlay -->
     {{yield}}
-  </div>
-</li>
+    <span class="portfolio-thumb-title">{{title}}</span>
+  </a>
+</div>
