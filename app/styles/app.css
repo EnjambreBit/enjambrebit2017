@@ -229,10 +229,14 @@ body > div[class*='ember-view'] {
 }
 
 .portfolio-thumb-title {
-  position: absolute;
-    display: block;
-    bottom: 10px;
-    right: 9px;
+  display: block;
+  position: relative;
+  background-color: rgba(0,0,0,0.07);
+  z-index: 1;
+  border-radius: 3px;
+  text-align: center;
+  padding: 5px 0 3px 0;
+  color: #666;
 }
 
 .isotope,
