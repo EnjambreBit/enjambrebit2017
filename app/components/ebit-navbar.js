@@ -1,5 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  tagName: ""
+  tagName: "",
+  classNames: ["ui", "fixed", "menu", "inverted", "ebit-navbar"],
+  actions: {
+    toggle: function(id) {
+      $(`#${id}`).sidebar("toggle");
+    }
+  }
 });

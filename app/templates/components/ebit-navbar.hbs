@@ -1,3 +1,13 @@
+{{#if media.isMobile}}
+
+  <div class="ui sidebar inverted vertical menu">
+    {{ebit-secciones-del-menu}}
+  </div>
+  <a class="launch icon item" {{action 'toggle' 'sub-sidebar'}}>
+    <i class="content icon"></i>
+  </a>
+
+{{else}}
 <div class="ui fixed menu navbar page grid">
   {{#link-to "app.index" class="item"}}
     <img src="/enjambre-bit_logo-menu.png" width=35 height=35>
@@ -8,3 +18,4 @@
     {{ebit-redes}}
   </div>
 </div>
+{{/if}}
