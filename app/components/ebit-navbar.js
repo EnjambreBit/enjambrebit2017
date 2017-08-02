@@ -5,7 +5,7 @@ export default Ember.Component.extend({
   classNames: ["ui", "fixed", "menu", "inverted", "ebit-navbar"],
   actions: {
     toggle: function(id) {
-      $(`#${id}`).sidebar("toggle");
+      Ember.$(`#${id}`).sidebar("toggle");
     }
   }
 });

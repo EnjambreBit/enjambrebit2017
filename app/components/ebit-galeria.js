@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
     tagName: "",
     didInsertElement(){
-    var $container = $('.isotope-grid');
+    var $container = Ember.$('.isotope-grid');
     $container.imagesLoaded(function() {
       $container.isotope({
         itemSelector: '.grid-item',
@@ -11,13 +11,13 @@ export default Ember.Component.extend({
       });
     });
 
-    $('.isotope-filter .filter li a').click(function () {
+    Ember.$('.isotope-filter .filter li a').click(function () {
 
-        $('.isotope-filter .filter li a').removeClass('active');
+        Ember.$('.isotope-filter .filter li a').removeClass('active');
 
-        $(this).addClass('active');
+        Ember.$(this).addClass('active');
 
-        var selector = $(this).attr('data-filter');
+        var selector = Ember.$(this).attr('data-filter');
         $container.isotope({
             filter: selector
         });

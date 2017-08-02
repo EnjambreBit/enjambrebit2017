@@ -1,7 +1,11 @@
-<div class="ebit-section-bg lab"></div>
-<div class="ui secondary pointing fluid menu">
-  <h1 class="ui huge header">
-    Lab
-  </h1>
+<div class="ui large center container ebit-content">
+  {{#if media.isDesktop}}
+    <div class="ebit-section-bg lab"></div>
+  {{/if}}
+  <div class="ui secondary pointing fluid menu">
+    <h1 class="ui huge header">
+      Lab
+    </h1>
+  </div>
+  {{outlet}}
 </div>
-{{outlet}}
