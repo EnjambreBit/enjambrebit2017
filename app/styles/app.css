@@ -87,26 +87,11 @@ body > div[class*='ember-view'] {
   background: none;
 }
 
-.ui.inverted.menu {
-  background: #fafafa url("../enjambre-bit_logo-home.png") no-repeat bottom center;
-  background-size: 70%;
-}
 
 .ui.inverted.menu a.item {
-  color: #caa;
   padding: 0.9em 1.15em;
-  background: rgb(168,0,0);
 }
-.ui.inverted.menu a.item:hover,
-.ui.inverted.menu a.item:active,
-.ui.inverted.menu.active.item,
-.ui.inverted.menu .active.item:hover,
-.ui.inverted.menu > .active.item:first-child
- {
-  color: #fff;
-  padding: 0.9em 1.15em;
-  background: rgb(220,0,0);
-}
+
 
 
 
@@ -142,7 +127,27 @@ body > div[class*='ember-view'] {
 }
 
 .ebit-content {
-  padding-top: 4em;
+  /*padding-top: 1em;*/
+}
+
+.ebit-mobile-menu {
+  display: block;
+  padding-top: 10px;
+}
+
+.ebit-margin-top {
+  display: block;
+  height: 4em;
+}
+
+.ebit-logo-mobile {
+  display: block;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: url("../enjambre-bit_logo-menu.png") top right no-repeat;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -286,12 +291,17 @@ body > div[class*='ember-view'] {
 }
 
 .isotope-grid {
-  width: 90%;
+  width: 100%;
 }
 
 /* fluid 5 columns */
 .grid-item {
   width: 25%;
+  padding: 5px;
+}
+
+.grid-item-mobile {
+  width: 50%;
   padding: 5px;
 }
 

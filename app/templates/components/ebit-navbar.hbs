@@ -1,21 +1,20 @@
 {{#if media.isMobile}}
-
+  <div class="ebit-logo-mobile"></div>
   <div class="ui sidebar inverted vertical menu">
     {{ebit-secciones-del-menu}}
   </div>
-  <a class="launch icon item" {{action 'toggle' 'sub-sidebar'}}>
+  <a class="launch icon item ebit-mobile-menu" {{action 'toggle' 'sub-sidebar'}}>
     <i class="content icon"></i>
   </a>
 
 {{else}}
-<div class="ui fixed menu navbar page grid">
-  {{#link-to "app.index" class="item"}}
-    <img src="/enjambre-bit_logo-menu.png" width=35 height=35>
-  {{/link-to}}
-
+<div class="ui fixed menu navbar page grid ebit-navbar">
   {{ebit-secciones-del-menu}}
   <div class="ui right menu">
     {{ebit-redes}}
   </div>
 </div>
+{{/if}}
+{{#if media.isDesktop}}
+  <div class="ebit-margin-top"></div>
 {{/if}}
