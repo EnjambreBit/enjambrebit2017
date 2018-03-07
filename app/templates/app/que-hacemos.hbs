@@ -1,0 +1,17 @@
+<div class="ui large center container ebit-content">
+  {{#if media.isDesktop}}
+    <div class="ebit-section-bg contacto"></div>
+  {{/if}}
+  <div class="ui secondary pointing fluid menu">
+    <h1 class="ui huge header">
+      ¿Qué hacemos? 
+    </h1>
+  </div>
+  <div class="ui three cards">
+    {{ebit-tarjeta-skills icono="desktop" titulo="Desarrollo Web" skills="Ember JS, Django, Semantic UI"}}
+    {{ebit-tarjeta-skills icono="code" titulo="Software a medida" skills="Ember JS, Django, Semantic UI"}}
+    {{ebit-tarjeta-skills icono="code" titulo="UI/UX" skills="Ember JS, Django, Semantic UI"}}
+    {{ebit-tarjeta-skills icono="code" titulo="3D / Animación" skills="Blender"}}
+  </div>
+  {{outlet}}
+</div>

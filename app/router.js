@@ -12,6 +12,8 @@ Router.map(function() {
     this.route('portfolio');
     this.route('lab');
     this.route('contacto');
+    this.route('que-hacemos');
+    this.route('sumate');
   });
 });
 
