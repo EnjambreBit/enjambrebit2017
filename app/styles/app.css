@@ -87,13 +87,9 @@ body > div[class*='ember-view'] {
   background: none;
 }
 
-
 .ui.inverted.menu a.item {
   padding: 0.9em 1.15em;
 }
-
-
-
 
 .ebit-section-bg {
   display: block;
@@ -150,116 +146,122 @@ body > div[class*='ember-view'] {
   background: url("../enjambre-bit_logo-menu.png") top right no-repeat;
 }
 
+/* Segments */
+.ui.red.segment:not(.inverted) {
+  border-top: none !important;
+  border-bottom: 1px solid rgb(220, 0, 0) !important;
+}
+
 /*-----------------------------------------------------------------------------------*/
 /*      PORTFOLIO
 /*-----------------------------------------------------------------------------------*/
 .filter {
-        list-style: none;
-        margin: 0 0 20px 0;
+  list-style: none;
+  margin: 0 0 20px 0;
 }
 .filter li {
-        display: inline;
-        font-weight: 900;
-        font-size: 13px;
-        text-transform: uppercase;
-        line-height: 1;
-        color: #c5c5c5;
+  display: inline;
+  font-weight: 900;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 1;
+  color: #c5c5c5;
 }
 .filter li:after {
-        display: inline-block;
-        content: "/";
-        padding: 0 13px 0 15px;
+  display: inline-block;
+  content: "/";
+  padding: 0 13px 0 15px;
 }
 .filter li a {
-        color: #656565;
+  color: #656565;
 }
 .filter li a.active,
 .filter li a:hover {
-        color: #1abb9c;
+  color: rgb(220, 0, 0);
 }
 .filter li:last-child:after {
-        display: none;
+  display: none;
 }
 
 .thumbs {
-    margin-left: -12px;
-    margin-bottom: -12px;
-    *zoom: 1;
+  margin-left: -12px;
+  margin-bottom: -12px;
+  *zoom: 1;
 }
 .thumbs:before,
 .thumbs:after {
-    display: table;
-    content: "";
-    line-height: 0;
+  display: table;
+  content: "";
+  line-height: 0;
 }
 .thumbs:after {
-    clear: both
+  clear: both;
 }
 .thumbs div {
-    float: left;
-    min-height: 1px;
-    position: relative;
+  float: left;
+  min-height: 1px;
+  position: relative;
 }
 .thumbs div img {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 .thumbs div a,
 .thumbs div a img {
-    display: block;
-    position: relative;
+  display: block;
+  position: relative;
 }
 .thumbs div a {
-    overflow: hidden
+  overflow: hidden;
 }
 .thumbs div a .overlay {
-    opacity: 0;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    height: 100%;
-    position: absolute;
-    text-decoration: none;
-    width: 100%;
-    z-index: 100;
-    background: rgba(180,0,0,0.85);
-    -webkit-transition: all 200ms ease-in;
-    -o-transition: all 200ms ease-in;
-    -moz-transition: all 200ms ease-in;
+  opacity: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  height: 100%;
+  position: absolute;
+  text-decoration: none;
+  width: 100%;
+  z-index: 100;
+  background: rgba(180, 0, 0, 0.85);
+  -webkit-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
 }
 .thumbs div a:hover .overlay {
-    opacity: 1;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 .thumbs div a .overlay h4 {
-    margin: 0;
-    color: #fff;
+  margin: 0;
+  color: #fff;
 }
 .thumbs div a .overlay .info {
-    position: absolute;
-    left: 0;
-    top: -105px;
-    z-index: 2;
-    -moz-transition: all .3s linear;
-    -webkit-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    -ms-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    padding: 25px;
+  position: absolute;
+  left: 0;
+  top: -105px;
+  z-index: 2;
+  -moz-transition: all .3s linear;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  padding: 25px;
 }
 .thumbs div a:hover .overlay .info {
-    top: 0!important
+  top: 0 !important;
 }
 .thumbs div a .overlay span {
-    font-size: 14px;
-    font-style: italic;
-    color: #ddd;
+  font-size: 14px;
+  font-style: italic;
+  color: #ddd;
 }
 
 .portfolio-thumb-title {
   display: block;
   position: relative;
-  background-color: rgba(0,0,0,0.07);
+  background-color: rgba(0, 0, 0, 0.07);
   z-index: 1;
   border-radius: 3px;
   text-align: center;
@@ -269,25 +271,25 @@ body > div[class*='ember-view'] {
 
 .isotope,
 .isotope .item {
-    -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    -ms-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
-    transition-duration: 0.8s;
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
 }
 .isotope {
-    -webkit-transition-property: height, width;
-    -moz-transition-property: height, width;
-    -ms-transition-property: height, width;
-    -o-transition-property: height, width;
-    transition-property: height, width;
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
 }
 .isotope .item {
-    -webkit-transition-property: -webkit-transform, opacity;
-    -moz-transition-property: -moz-transform, opacity;
-    -ms-transition-property: -ms-transform, opacity;
-    -o-transition-property: top, left, opacity;
-    transition-property: transform, opacity;
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: top, left, opacity;
+  transition-property: transform, opacity;
 }
 
 .isotope-grid {
@@ -307,5 +309,5 @@ body > div[class*='ember-view'] {
 
 .grid-item img {
   width: 100%;
-  height:100%;
+  height: 100%;
 }

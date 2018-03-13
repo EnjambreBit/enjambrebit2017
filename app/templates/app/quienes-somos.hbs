@@ -4,8 +4,24 @@
   {{/if}}
   <div class="ui secondary pointing fluid menu">
     <h1 class="ui huge header">
-      Quienes somos
+      ¿Quiénes somos?
     </h1>
   </div>
-  {{outlet}}
+  <div class="ui left aligned basic segment">
+    <p>Somos una empresa jóven.</p>
+    <p>Creemos que la suma de las partes es más que el todo.</p>
+  </div>
+  <div class="ui secondary pointing fluid menu">
+    <h1 class="ui huge header">
+      ¿Qué hacemos?
+    </h1>
+  </div>
+  <div class="ui left aligned basic segment">
+    <div class="ui four cards">
+      {{ebit-tarjeta-skills icono="web" titulo="Desarrollo Web" skills="Ember JS, Django, Semantic UI"}}
+      {{ebit-tarjeta-skills icono="web" titulo="Software a medida" skills="Ember JS, Django, Semantic UI"}}
+      {{ebit-tarjeta-skills icono="web" titulo="UI/UX" skills="Ember JS, Django, Semantic UI"}}
+      {{ebit-tarjeta-skills icono="3d" titulo="3D / Animación" skills="Blender"}}
+    </div>
+  </div>
 </div>
