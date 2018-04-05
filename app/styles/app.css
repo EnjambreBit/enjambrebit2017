@@ -1,3 +1,8 @@
+html {
+  font-display: swap;
+  font-size: 1em;
+}
+
 body {
   overflow: visible;
   height: 100%;
@@ -6,7 +11,7 @@ body {
   display: flex;
 }
 
-body > div[class*='ember-view'] {
+body > div[class*="ember-view"] {
   flex: 1;
 }
 
@@ -107,19 +112,19 @@ body > div[class*='ember-view'] {
 }
 
 .ebit-section-bg.quienes-somos {
-  background-image: url('/fondos/ebit-section-bg_quienes-somos.jpg');
+  background-image: url("/fondos/ebit-section-bg_quienes-somos.jpg");
 }
 
 .ebit-section-bg.portfolio {
-  background-image: url('/fondos/ebit-section-bg_portfolio.jpg');
+  background-image: url("/fondos/ebit-section-bg_portfolio.jpg");
 }
 
 .ebit-section-bg.lab {
-  background-image: url('/fondos/ebit-section-bg_lab.jpg');
+  background-image: url("/fondos/ebit-section-bg_lab.jpg");
 }
 
 .ebit-section-bg.contacto {
-  background-image: url('/fondos/ebit-section-bg_contacto.jpg');
+  background-image: url("/fondos/ebit-section-bg_contacto.jpg");
 }
 
 .ebit-content {
@@ -217,7 +222,7 @@ body > div[class*='ember-view'] {
 .thumbs div a .overlay {
   opacity: 0;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   height: 100%;
   position: absolute;
   text-decoration: none;
@@ -231,7 +236,7 @@ body > div[class*='ember-view'] {
 .thumbs div a:hover .overlay {
   opacity: 1;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 .thumbs div a .overlay h4 {
   margin: 0;
@@ -242,11 +247,11 @@ body > div[class*='ember-view'] {
   left: 0;
   top: -105px;
   z-index: 2;
-  -moz-transition: all .3s linear;
-  -webkit-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  -ms-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   padding: 25px;
 }
 .thumbs div a:hover .overlay .info {

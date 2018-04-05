@@ -5,47 +5,100 @@
       <li><a href="#" data-filter=".web">Web</a></li>
       <li><a href="#" data-filter=".devel">Desarrollo</a></li>
       <li><a href="#" data-filter=".software">Software a medida</a></li>
+      <li><a href="#" data-filter=".ui">UI/UX</a></li>
       <li><a href="#" data-filter=".multimedia">2D, 3D y Multimedia</a></li>
       <li><a href="#" data-filter=".design">Diseño</a></li>
     </ul>
   </div>
-  <div class="ui four cards">
-    <div class="ui card">
-      <div class="ui slide masked reveal image">
-        <img src="/portfolio/thumbs/ebit_portfolio_dashboard-icon.png" class="visible content">
-        <img src="/portfolio/capturas/ebit_portfolio_spectro.jpg" class="hidden content">
-      </div>
-      <div class="content">
-        <a class="header">Team Fu &amp; Hess</a>
-        <div class="meta">
-          <span class="date">Created in Sep 2014</span>
-        </div>
-      </div>
-      <div class="extra content">
-        <a>
-          <i class="users icon"></i>
-          2 Members
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="isotope-grid thumbs">
-    {{#ebit-work-item tagName="" type="software devel" title="Mutual Nikkai" description="Migración de datos y desarrollo de un sistema de gestión web para seguimiento de cuentas corrientes de socios y grupos familiares."}}
-      <img src="/portfolio/thumbs/ebit_portfolio_gestion-icon.png" alt="" />
-    {{/ebit-work-item}}
-    {{#ebit-work-item tagName="" type="software" title="Spectro Location Intelligence" description="Desarrollo de API para manejo de microservicios. Desarrollo de Backend y API. Desarrollo de Frontend del Dashboard para monitoreo de datos."}}
-      <img src="/portfolio/thumbs/ebit_portfolio_spectro.png" alt="Spectro Location Intelligence" />
-    {{/ebit-work-item}}
-    {{#ebit-work-item tagName="" type="web design" title="Berko S.A." description="Diseño y desarrollo del sitio web institucional."}}
-      <img src="/portfolio/thumbs/ebit_portfolio_berko.png" alt="Precintos Berko SA." />
-    {{/ebit-work-item}}
-    {{#ebit-work-item tagName="" type="tics devel multimedia design" title="Fundación Sadosky" description="Mejoras en el desarrollo y diseño de Pilas Bloques. Inclusión de nuevas actividades."}}
-      <img src="/portfolio/thumbs/ebit_portfolio_pilas-bloques-icon.png" alt="" />
-    {{/ebit-work-item}}
-    {{#ebit-work-item tagName="" type="tics devel multimedia design" title="Fundación Sadosky" description="Diseño y desarrollo para un programa destinado a la enseñanza de programación en bloques para nivel inicial."}}
-      <img src="/portfolio/thumbs/ebit_portfolio_pilas-bloques-jr-icon.png" alt="" />
-    {{/ebit-work-item}}
-    {{#ebit-work-item tagName="" type="software web" title="World Democratic Forum" description="Diseño y desarrollo para un programa destinado a la enseñanza de programación en bloques para nivel inicial."}}
-      <img src="/portfolio/thumbs/ebit_portfolio_responsive-map-icon.png" alt="" />
-    {{/ebit-work-item}}
+
+  <div class="ui three cards">
+
+    {{#ebit-portfolio-card
+      cliente="InterCement"
+      producto="Dash BI"
+      descripcion="..."
+      tecnologias="Django, Ember JS"
+      tags="devel"
+    }}
+      <img src="/portfolio/capturas/ebit_portfolio_spectro.jpg" class="visible content">
+      <img src="/portfolio/thumbs/ebit_portfolio_spectro.png" class="hidden content">
+    {{/ebit-portfolio-card}}
+
+    {{#ebit-portfolio-card
+      cliente="InterCement"
+      producto="Dash CEO"
+      descripcion="UI/UX y ..."
+      tecnologias="Django, Ember JS, D3"
+      tags="devel ui design"
+    }}
+      <img src="/portfolio/capturas/ebit_portfolio_spectro.jpg" class="visible content">
+      <img src="/portfolio/thumbs/ebit_portfolio_spectro.png" class="hidden content">
+    {{/ebit-portfolio-card}}
+
+    {{#ebit-portfolio-card
+      cliente="Spectro"
+      producto="Pulse"
+      descripcion="Desarrollo de backend, API y frontend para monitoreo de datos."
+      tecnologias="Django, Ember JS"
+      tags="software"
+    }}
+      <img src="/portfolio/capturas/ebit_portfolio_spectro.jpg" class="visible content">
+      <img src="/portfolio/thumbs/ebit_portfolio_spectro.png" class="hidden content">
+    {{/ebit-portfolio-card}}
+
+    {{#ebit-portfolio-card
+      cliente="Mutual Nikkai"
+      producto="Origami"
+      descripcion="Migración de datos y desarrollo de un sistema de gestión web para seguimiento de cuentas corrientes de socios y grupos familiares."
+      tecnologias="Django, Ember JS, Semantic UI"
+      tags="software devel"
+    }}
+      <img src="/portfolio/capturas/ebit_portfolio_spectro.jpg" class="visible content">
+      <img src="/portfolio/thumbs/ebit_portfolio_spectro.png" class="hidden content">
+    {{/ebit-portfolio-card}}
+
+    {{#ebit-portfolio-card
+      cliente="Berko SA"
+      producto="Website"
+      descripcion="Diseño y desarrollo del sitio web institucional."
+      tecnologias="HTML, Bootstrap"
+      tags="web design"
+    }}
+      <img src="/portfolio/capturas/ebit_portfolio_spectro.jpg" class="visible content">
+      <img src="/portfolio/thumbs/ebit_portfolio_spectro.png" class="hidden content">
+    {{/ebit-portfolio-card}}
+
+    {{#ebit-portfolio-card
+      cliente="Fundación Sadosky"
+      producto="Pilas Bloques"
+      descripcion="Mejoras en el desarrollo y diseño de Pilas Bloques. Inclusión de nuevas actividades."
+      tecnologias="Node Js, Electron, Inkscape"
+      tags="tics devel multimedia design"
+    }}
+      <img src="/portfolio/capturas/ebit_portfolio_spectro.jpg" class="visible content">
+      <img src="/portfolio/thumbs/ebit_portfolio_spectro.png" class="hidden content">
+    {{/ebit-portfolio-card}}
+
+    {{#ebit-portfolio-card
+      cliente="Fundación Sadosky"
+      producto="Pilas Bloques Jr."
+      descripcion="Diseño y desarrollo para un programa destinado a la enseñanza de programación en bloques para nivel inicial."
+      tecnologias="Node Js, Electron, Inkscape"
+      tags="tics devel multimedia design"
+    }}
+      <img src="/portfolio/capturas/ebit_portfolio_spectro.jpg" class="visible content">
+      <img src="/portfolio/thumbs/ebit_portfolio_spectro.png" class="hidden content">
+    {{/ebit-portfolio-card}}
+
+    {{#ebit-portfolio-card
+      cliente="World Democratic Forum"
+      producto="IGM Map"
+      descripcion="Diseño y desarrollo para un programa destinado a la enseñanza de programación en bloques para nivel inicial."
+      tecnologias="Node Js, Electron, Inkscape"
+      tags="software"
+    }}
+      <img src="/portfolio/capturas/ebit_portfolio_spectro.jpg" class="visible content">
+      <img src="/portfolio/thumbs/ebit_portfolio_spectro.png" class="hidden content">
+    {{/ebit-portfolio-card}}
+
   </div>

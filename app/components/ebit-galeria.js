@@ -1,27 +1,26 @@
-import Ember from 'ember';
+import Ember from "ember";
 
 export default Ember.Component.extend({
-    tagName: "",
-    didInsertElement(){
-    var $container = Ember.$('.isotope-grid');
+  tagName: "",
+  didInsertElement() {
+    var $container = Ember.$(".cards");
     $container.imagesLoaded(function() {
       $container.isotope({
-        itemSelector: '.grid-item',
-        layoutMode: 'fitRows'
+        itemSelector: ".card",
+        layoutMode: "fitRows"
       });
     });
 
-    Ember.$('.isotope-filter .filter li a').click(function () {
+    Ember.$(".isotope-filter .filter li a").click(function() {
+      Ember.$(".isotope-filter .filter li a").removeClass("active");
 
-        Ember.$('.isotope-filter .filter li a').removeClass('active');
+      Ember.$(this).addClass("active");
 
-        Ember.$(this).addClass('active');
-
-        var selector = Ember.$(this).attr('data-filter');
-        $container.isotope({
-            filter: selector
-        });
-        return false;
+      var selector = Ember.$(this).attr("data-filter");
+      $container.isotope({
+        filter: selector
+      });
+      return false;
     });
-    }
+  }
 });
