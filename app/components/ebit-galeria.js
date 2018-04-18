@@ -3,10 +3,10 @@ import Ember from "ember";
 export default Ember.Component.extend({
   tagName: "",
   didInsertElement() {
-    var $container = Ember.$(".cards");
+    var $container = Ember.$(".grid");
     $container.imagesLoaded(function() {
       $container.isotope({
-        itemSelector: ".card",
+        itemSelector: ".column",
         layoutMode: "fitRows"
       });
     });
