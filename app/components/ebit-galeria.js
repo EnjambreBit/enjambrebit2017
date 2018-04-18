@@ -22,5 +22,9 @@ export default Ember.Component.extend({
       });
       return false;
     });
+
+    Ember.$(".fluid.card .image").dimmer({
+      on: "hover"
+    });
   }
 });

@@ -31,6 +31,14 @@ body > div[class*="ember-view"] {
   padding-top: 1em;
 }
 
+.ui.sub.header {
+  text-transform: none;
+}
+
+h4.ui.header .sub.header {
+  font-size: 0.9rem;
+}
+
 .pull-right {
   float: right;
 }
@@ -138,7 +146,7 @@ body > div[class*="ember-view"] {
 
 .ebit-margin-top {
   display: block;
-  height: 4em;
+  height: 1em;
 }
 
 .ebit-logo-mobile {

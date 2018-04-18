@@ -1,4 +1,4 @@
-<div class="ui large center container ebit-content">
+<div class="ui large container ebit-content">
   {{#if media.isDesktop}}
     <div class="ebit-section-bg portfolio"></div>
   {{/if}}
@@ -7,11 +7,13 @@
       ¿Qué hacemos?
     </h1>
   </div>
-  <div class="ui four cards">
-    {{ebit-tarjeta-skills icono="web" titulo="Desarrollo Web" skills="Ember JS, Django, Semantic UI"}}
-    {{ebit-tarjeta-skills icono="code" titulo="Software a medida" skills="Ember JS, Django, Semantic UI"}}
-    {{ebit-tarjeta-skills icono="code" titulo="UI/UX" skills="Ember JS, Django, Semantic UI"}}
-    {{ebit-tarjeta-skills icono="3d" titulo="3D / Animación" skills="Blender"}}
+  <div class="ui left aligned basic segment">
+    <div class="ui four cards">
+      {{ebit-tarjeta-skills icono="web" titulo="Desarrollo Web" skills="Ember JS, Django, Semantic UI"}}
+      {{ebit-tarjeta-skills icono="web" titulo="Software a medida" skills="Ember JS, Django, Semantic UI"}}
+      {{ebit-tarjeta-skills icono="web" titulo="UI/UX" skills="Ember JS, Django, Semantic UI"}}
+      {{ebit-tarjeta-skills icono="3d" titulo="3D / Animación" skills="Blender"}}
+    </div>
   </div>
   {{outlet}}
 </div>

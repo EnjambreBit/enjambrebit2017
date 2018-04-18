@@ -1,22 +1,29 @@
 <div class="ui column {{tags}}">
   <div class="ui fluid card">
-    <div class="ui image">
+    <div class="ui blurring dimmable image">
+      <div class="ui dimmer">
+        <div class="content">
+          <div class="center">
+            <div class="ui inverted button">Ver proyecto</div>
+          </div>
+        </div>
+      </div>
       {{yield}}
     </div>
     <div class="content">
-      <a class="header">{{producto}}</a>
-      <div class="meta">
-        <span class="date">{{cliente}}</span>
-      </div>
+      <h4 class="ui red header">
+        {{producto}}
+
+        <div class="ui sub header">{{cliente}}</div>
+      </h4>
       <div class="meta">
         <span class="date">{{descripcion}}</span>
       </div>
     </div>
-    <div class="extra content">
-      <a>
-        <i class="code icon"></i>
-        {{tecnologias}}
-      </a>
+    <div class="right aligned extra content">
+      {{#each tecIcons as |t|}}
+        <img src="/icons/ebit_tec-icon_{{t}}.png" height=20 alt="{{t}}" title="{{t}}"/>
+      {{/each}}
     </div>
   </div>
 </div>
