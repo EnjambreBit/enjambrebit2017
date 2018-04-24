@@ -1,14 +1,15 @@
-<div class="ui large container ebit-content">
+<div class="ui vertical center aligned stripe segment">
   {{#if media.isDesktop}}
     <div class="ebit-section-bg lab"></div>
   {{/if}}
-  <div class="ui secondary pointing fluid menu">
-    <h1 class="ui huge header">
-      <i class="red flask icon"></i>
-      <div class="content">
-        Lab
-      </div>
-    </h1>
+  <div class="ui container">
+    <div class="ui secondary pointing fluid menu">
+      <h1 class="ui huge header">
+        <div class="content">
+          Lab
+        </div>
+      </h1>
+    </div>
+    {{outlet}}
   </div>
-  {{outlet}}
 </div>

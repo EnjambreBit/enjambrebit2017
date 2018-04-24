@@ -1,17 +1,5 @@
-<div class="ui pushable segment component context">
-
-  {{#ui-sidebar class="inverted menu left inline vertical" context=".component.context" id="sub-sidebar"}}
-    {{ebit-secciones-del-menu}}
-  {{/ui-sidebar}}
-
-  <div class="pusher">
-
-    <div class="ui container main">
-      {{ebit-navbar}}
-
-      <div class="ui container">
-        {{outlet}}
-      </div>
-    </div>
-  </div>
+<div class="Site-content ebit-container">
+{{ebit-navbar}}
+  {{outlet}}
 </div>
+{{ebit-footer}}

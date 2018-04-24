@@ -1,3 +1,80 @@
+/* General */
+html {
+  font-display: swap;
+  font-size: 1em;
+}
+
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+  min-height: 100vh;
+}
+
+.ebit-container {
+  margin-top: 3.5em;
+}
+
+.ebit-spacer {
+  display: block;
+  height: 6rem;
+}
+
+/* Menu */
+.ui.menu .item {
+  padding: 0em 0.9em;
+}
+
+.ui.menu .active.item,
+.ui.menu .active.item:hover,
+.ui.menu a.item:hover {
+  color: white;
+  background: rgb(220, 0, 0);
+}
+
+.ui.menu .active.item {
+  font-weight: 600;
+}
+
+.ui.menu .item:first-child,
+.ui.menu .item:first-child:hover {
+  background: none;
+}
+
+.ui.menu .item:before {
+  background: none;
+}
+
+.ui.secondary.pointing.menu {
+  border-bottom: 2px solid rgb(220, 0, 0);
+}
+
+/* Menu Social */
+
+.ui.right.menu {
+  border: 0;
+  box-shadow: none;
+}
+
+.ui.right.menu a.item {
+  color: #666;
+}
+
+.ui.right.menu a.item:hover {
+  color: rgb(220, 0, 0);
+  background: none;
+}
+
+/* Secciones */
+.ui.header {
+  color: rgb(88, 88, 88);
+}
+
+/*
 html {
   font-display: swap;
   font-size: 1em;
@@ -102,7 +179,7 @@ h4.ui.header .sub.header {
 
 .ui.inverted.menu a.item {
   padding: 0.9em 1.15em;
-}
+} */
 
 .ebit-section-bg {
   display: block;
@@ -134,11 +211,7 @@ h4.ui.header .sub.header {
 .ebit-section-bg.contacto {
   background-image: url("/fondos/ebit-section-bg_contacto.jpg");
 }
-
-.ebit-content {
-  /*padding-top: 1em;*/
-}
-
+/*
 .ebit-mobile-menu {
   display: block;
   padding-top: 10px;
@@ -147,7 +220,7 @@ h4.ui.header .sub.header {
 .ebit-margin-top {
   display: block;
   height: 1em;
-}
+} */
 
 .ebit-logo-mobile {
   display: block;
@@ -157,12 +230,6 @@ h4.ui.header .sub.header {
   top: 10px;
   right: 10px;
   background: url("../enjambre-bit_logo-menu.png") top right no-repeat;
-}
-
-/* Segments */
-.ui.red.segment:not(.inverted) {
-  border-top: none !important;
-  border-bottom: 1px solid rgb(220, 0, 0) !important;
 }
 
 /*-----------------------------------------------------------------------------------*/

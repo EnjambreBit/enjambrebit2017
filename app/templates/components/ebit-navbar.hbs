@@ -1,20 +1,25 @@
 {{#if media.isMobile}}
-  <div class="ebit-logo-mobile"></div>
-  <div class="ui sidebar inverted vertical menu">
-    {{ebit-secciones-del-menu}}
-  </div>
-  <a class="launch icon item ebit-mobile-menu" {{action 'toggle' 'sub-sidebar'}}>
+  {{#if sidebarVisible}}
+    <div class="ebit-logo-mobile"></div>
+    <div class="bg-black-50 z-max fixed absolute--fill center" {{action "ocultarSidebar"}}>
+      <div class="ui fixed inverted vertical menu" style="bottom: 0" {{action "ocultarSidebar"}}>
+        {{ebit-secciones-del-menu}}
+      </div>
+    </div>
+  {{/if}}
+
+  <a class="launch icon item" {{action 'mostrarSidebar'}}>
     <i class="content icon"></i>
   </a>
 
 {{else}}
-<div class="ui fixed menu navbar ebit-navbar">
+  {{#link-to "app.index" tagName="div" class="item logo-container" current-when="index"}}
+    <img class="ui fluid image" src="/enjambre-bit_logo-menu.png" height=35>
+  {{/link-to}}
   {{ebit-secciones-del-menu}}
   <div class="ui right menu">
     {{ebit-redes}}
   </div>
-</div>
 {{/if}}
-{{#if media.isDesktop}}
-  <div class="ebit-margin-top"></div>
-{{/if}}
+
+{{yield}}

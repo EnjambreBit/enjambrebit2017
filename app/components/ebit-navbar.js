@@ -1,11 +1,14 @@
-import Ember from 'ember';
+import Ember from "ember";
 
 export default Ember.Component.extend({
-  tagName: "",
-  classNames: ["ui", "fixed", "menu", "inverted", "ebit-navbar"],
+  classNames: ["ui", "fixed", "menu", "barra-de-navegacion", "z-max"],
+  sidebarVisible: false,
   actions: {
-    toggle: function(id) {
-      Ember.$(`#${id}`).sidebar("toggle");
+    mostrarSidebar() {
+      this.set("sidebarVisible", true);
+    },
+    ocultarSidebar() {
+      this.set("sidebarVisible", false);
     }
   }
 });
