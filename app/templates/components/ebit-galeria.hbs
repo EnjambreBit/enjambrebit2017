@@ -11,13 +11,23 @@
     </ul>
   </div>
 
-  <div class="ui three column grid">
+  <div class="ui two column grid">
+
+    {{#ebit-portfolio-card
+      cliente="Dirección de Innovación y Tecnología Educativa"
+      producto="Copa TIC"
+      descripcion="En el contexto del mundial de fútbol Rusia 2018, el equipo de contenidistas de la DiTE diseñó 16 actividades relacionadas con las TIC para trabajar en más de 70 escuelas de la Provincia de Buenos Aires. Enjambre Bit desarrolló el sistema web que registra, semana a semana, las actividades realizadas por los distintos equipos de estudiantes secundarios que participan del proyecto."
+      tecnologias="django, ember, semantic, postgres, rest"
+      tags="devel software"
+    }}
+      <img src="/portfolio/capturas/ebit_portfolio_dnm-rma_thumb.jpg" class="visible content">
+    {{/ebit-portfolio-card}}
 
     {{#ebit-portfolio-card
       cliente="Dirección Nacional de Museos"
       producto="RMA"
-      descripcion="Plataforma para el Registro de Museos Argentinos"
-      tecnologias="django, ember, semantic"
+      descripcion="A pedido de la Dirección Nacional de Museos, Enjambre Bit desarrolló la plataforma para el relevamiento federal de los museos argentinos. Cada museo solicita una cuenta al RMA, una vez aprobada, accede a un formulario con secciones donde completa datos referentes a la institución, algunos para uso público y el resto para uso interno de la Dirección Nacional de Museos. Una vez corroborados los datos, se autoriza la publicación del museo en el sistema. El RMA cuenta con una parte de acceso libre a información útil para que el público en general pueda acceder a los datos generales de los museos; y una parte de uso interno para la DNM y organismos provinciales. Actualmente se está trabajando en la parte estadística del sistema, para procesar los datos cargados y brindar a la DNM herramientas de análisis."
+      tecnologias="django, ember, semantic, postgres, rest"
       tags="devel software"
     }}
       <img src="/portfolio/capturas/ebit_portfolio_dnm-rma_thumb.jpg" class="visible content">
