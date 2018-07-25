@@ -18,12 +18,15 @@
     {{/if}}
     <div class="content">
       <h4 class="ui red header">
-        {{producto}}
-
+        {{#if url}}
+          <a href="{{url}}" target="_blank" title="{{producto}}">{{producto}}</a>
+        {{else}}
+          {{producto}}
+        {{/if}}
         <div class="ui sub header">{{cliente}}</div>
       </h4>
       <div class="meta">
-        <span class="date">{{descripcion}}</span>
+        <span class="ebit-portfolio-descripcion">{{descripcion}}</span>
       </div>
     </div>
     <div class="right aligned extra content">

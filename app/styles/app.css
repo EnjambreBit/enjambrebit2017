@@ -24,6 +24,18 @@ html {
   height: 6rem;
 }
 
+.ui.huge.ebit.message {
+  background: transparent;
+  box-shadow: none;
+  color: #696969;
+}
+/* Headers */
+.ui.red.header a,
+.ui.red.header a:hover,
+.ui.red.header a:visited {
+  color: #db2828;
+}
+
 /* Menu */
 .ui.menu .item {
   padding: 0em 0.9em;
@@ -347,6 +359,11 @@ h4.ui.header .sub.header {
   text-align: center;
   padding: 5px 0 3px 0;
   color: #666;
+}
+
+.ebit-portfolio-descripcion {
+  display: block;
+  text-align: justify;
 }
 
 .isotope,
