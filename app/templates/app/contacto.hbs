@@ -1,11 +1,17 @@
-<div class="ui large center container ebit-content">
-  {{#if media.isDesktop}}
-    <div class="ebit-section-bg contacto"></div>
-  {{/if}}
-  <div class="ui secondary pointing fluid menu">
-    <h1 class="ui huge header">
-      Contacto
-    </h1>
+<div class="ui vertical center aligned stripe segment">
+    {{#if media.isDesktop}}
+      <div class="ebit-section-bg quienes-somos"></div>
+    {{/if}}
+    <div class="ui container">
+      <div class="ui secondary pointing fluid menu">
+        <h1 class="ui huge header">
+          <div class="content">
+            Contacto
+          </div>
+        </h1>
+      </div>
+      <div class="ui left aligned basic segment">
+        <p>contacto@enjambrebit.com.ar</p>
+      </div>
+    </div>
   </div>
-  {{outlet}}
-</div>

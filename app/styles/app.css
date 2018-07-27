@@ -29,6 +29,31 @@ html {
   box-shadow: none;
   color: #696969;
 }
+
+/* Home */
+#2d_bg,
+#design_bg,
+#ux_bg,
+#web_bg,
+#3d_bg,
+#ar_bg,
+#mobile_bg,
+#code_bg {
+  cursor: pointer;
+}
+
+#2d_text,
+#design_text,
+#ux_text,
+#web_text,
+#3d_text,
+#ar_text,
+#mobile_text,
+g#code_text > path {
+  display: none;
+  pointer-events: none !important;
+}
+
 /* Headers */
 .ui.red.header a,
 .ui.red.header a:hover,
