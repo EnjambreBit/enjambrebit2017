@@ -3,6 +3,35 @@ import Ember from "ember";
 export default Ember.Component.extend({
   tagName: "",
   didInsertElement() {
+    Ember.$("#code_bg")
+      .delay(250)
+      .fadeIn(500);
+    Ember.$("#ar_bg")
+      .delay(250)
+      .fadeIn(500);
+    Ember.$("#web_bg")
+      .delay(500)
+      .fadeIn(500);
+    Ember.$("#3d_bg")
+      .delay(750)
+      .fadeIn(500);
+    Ember.$("#ux_bg")
+      .delay(1000)
+      .fadeIn(500);
+    Ember.$("#design_bg")
+      .delay(1250)
+      .fadeIn(500);
+    Ember.$("#mobile_bg")
+      .delay(650)
+      .fadeIn(500);
+    Ember.$("#2d_bg")
+      .delay(950)
+      .fadeIn(500);
+
+    Ember.$("#enjambrebit")
+      .delay(1600)
+      .fadeIn(800);
+
     Ember.$("#2d_bg").hover(function(e) {
       Ember.$("#2d_text").fadeIn();
     });

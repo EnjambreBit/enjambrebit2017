@@ -38,7 +38,8 @@ html {
 #3d_bg,
 #ar_bg,
 #mobile_bg,
-#code_bg {
+path#code_bg {
+  display: none !important;
   cursor: pointer;
 }
 
