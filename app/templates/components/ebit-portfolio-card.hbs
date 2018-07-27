@@ -5,7 +5,7 @@
         <div class="ui dimmer">
           <div class="content">
             <div class="center">
-              <div class="ui inverted button">Ver proyecto</div>
+              <a class="ui inverted button" href="{{proyectoBlog}}" target="_blank" title="Leer mas sobre {{producto}} en nuestro blog.">Leer más en el Blog</a>
             </div>
           </div>
         </div>
@@ -31,7 +31,7 @@
     </div>
     <div class="right aligned extra content">
       {{#each tecIcons as |t|}}
-        <img src="/icons/ebit_tec-icon_{{t}}.png" height=30 alt="{{t}}" title="{{t}}"/>
+        <img src="/icons/ebit_tec-icon_{{t.slug}}.png" height=30 alt="{{t.name}}" title="{{t.name}}"/>
       {{/each}}
     </div>
   </div>
