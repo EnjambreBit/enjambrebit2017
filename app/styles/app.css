@@ -54,6 +54,11 @@ g#code_text > path {
   pointer-events: none !important;
 }
 
+svg#ebit-logo-skills {
+  height: auto !important;
+  width: 50% !important;
+}
+
 /* Headers */
 .ui.red.header a,
 .ui.red.header a:hover,
