@@ -29,6 +29,31 @@ html {
   box-shadow: none;
   color: #696969;
 }
+
+/* Home */
+#2d_bg,
+#design_bg,
+#ux_bg,
+#web_bg,
+#3d_bg,
+#ar_bg,
+#mobile_bg,
+#code_bg {
+  cursor: pointer;
+}
+
+#2d_text,
+#design_text,
+#ux_text,
+#web_text,
+#3d_text,
+#ar_text,
+#mobile_text,
+g#code_text > path {
+  display: none;
+  pointer-events: none !important;
+}
+
 /* Headers */
 .ui.red.header a,
 .ui.red.header a:hover,
@@ -84,6 +109,28 @@ html {
 /* Secciones */
 .ui.header {
   color: rgb(88, 88, 88);
+}
+
+/* Menu list Contacto */
+
+.ui.list.contacto-list a.item,
+.ui.list.footer-list a.item {
+  color: #555;
+}
+
+.ui.list.contacto-list a.item i.icon,
+.ui.list.footer-list a.item i.icon {
+  color: #666;
+}
+
+.ui.list.contacto-list a.item:hover,
+.ui.list.footer-list a.item:hover {
+  color: #333;
+}
+
+.ui.list.footer-list a.item:hover i.icon,
+.ui.list.contacto-list a.item:hover i.icon {
+  color: rgb(220, 0, 0);
 }
 
 /*
@@ -407,4 +454,10 @@ h4.ui.header .sub.header {
 .grid-item img {
   width: 100%;
   height: 100%;
+}
+
+/* Footer */
+.ebit-footer {
+  display: block;
+  background: rgba(255, 255, 255, 0.8) !important;
 }
