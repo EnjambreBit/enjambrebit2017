@@ -426,6 +426,7 @@ h4.ui.header .sub.header {
 .ebit-portfolio-descripcion {
   display: block;
   text-align: justify;
+  height: 110px;
 }
 
 .isotope,

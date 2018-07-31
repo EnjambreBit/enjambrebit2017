@@ -66,6 +66,9 @@ export default Ember.Component.extend({
       if (tec === "sqlite") {
         name = "SQLite";
       }
+      if (tec === "php") {
+        name = "PHP";
+      }
       tec_list.push({ slug: tec, name: name });
     });
     return tec_list;
