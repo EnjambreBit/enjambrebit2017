@@ -4,46 +4,76 @@
       <div class="ebit-section-bg quienes-somos"></div>
     {{/if}}
     <div class="ui container">
-     
       <div class="ui left aligned basic segment">
-        <img class="ui small image" src="/enjambre-bit_logo-home.png">
-        <div class="ui big list contacto-list">
-          <a class="item">
-            <i class="home icon"></i>
-            <div class="content">
-              Paysandú 1562, Piso 1, Ciudad Autónoma de Buenos Aires
+        <div class="ui stackable grid">
+          <div class="six wide column">
+            <div class="ui one column grid">
+              <div class="column">
+                <img class="ui medium image" src="/enjambre-bit_logo-home.png">
+              </div>
+              <div class="column">
+                <div class="ui large list contacto-list">
+                  <a class="item">
+                      <i class="map marker icon"></i>
+                    <div class="content">
+                      Caballito, CABA, Argentina
+                    </div>
+                  </a>
+                  <a class="item" href="mailto:contacto@enjambrebit.com.ar" target="_blank" title="Comunicate con nosotros">
+                    <i class="mail icon"></i>
+                    <div class="content">
+                      contacto@enjambrebit.com.ar
+                    </div>
+                  </a>
+                  <a class="item" href="https://github.com/EnjambreBit" target="_blank" title="Nuestro código en GitHub">
+                    <i class="github icon"></i>
+                    <div class="content">
+                      github.com/EnjambreBit
+                    </div>
+                  </a>
+                  <a class="item" href="https://facebook.com/EnjambreBit" target="_blank" title="Seguinos en Facebook">
+                    <i class="facebook icon"></i>
+                    <div class="content">
+                      facebook.com/EnjambreBit
+                    </div>
+                  </a>
+                  <a class="item" href="https://twitter.com/EnjambreBit" target="_blank" title="Seguinos en Twitter">
+                    <i class="twitter icon"></i>
+                    <div class="content">
+                      twitter.com/EnjambreBit
+                    </div>
+                  </a>
+                  <a class="item" href="https://instagram.com/EnjambreBit" target="_blank" title="Seguinos en Instagram">
+                    <i class="instagram icon"></i>
+                    <div class="content">
+                      instagram.com/EnjambreBit
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
-          </a>
-          <a class="item" href="mailto:contacto@enjambrebit.com.ar" target="_blank" title="Comunicate con nosotros">
-            <i class="mail icon"></i>
-            <div class="content">
-              contacto@enjambrebit.com.ar
-            </div>
-          </a>
-          <a class="item" href="https://github.com/EnjambreBit" target="_blank" title="Nuestro código en GitHub">
-            <i class="github icon"></i>
-            <div class="content">
-              github.com/EnjambreBit
-            </div>
-          </a>
-          <a class="item" href="https://facebook.com/EnjambreBit" target="_blank" title="Seguinos en Facebook">
-            <i class="facebook icon"></i>
-            <div class="content">
-              facebook.com/EnjambreBit
-            </div>
-          </a>
-          <a class="item" href="https://twitter.com/EnjambreBit" target="_blank" title="Seguinos en Twitter">
-            <i class="twitter icon"></i>
-            <div class="content">
-              twitter.com/EnjambreBit
-            </div>
-          </a>
-          <a class="item" href="https://instagram.com/EnjambreBit" target="_blank" title="Seguinos en Instagram">
-            <i class="instagram icon"></i>
-            <div class="content">
-              instagram.com/EnjambreBit
-            </div>
-          </a>
+          </div>
+          <div class="ten wide column">
+            {{#g-map lat=-34.6170000 lng=-58.4458736 zoom=14 as |context|}}
+            {{#g-map-polyline context
+                                strokeColor="red" strokeWeight="3" strokeOpacity="0.5"
+                                geodesic=true as |coordinateContext|}}
+                                {{g-map-polyline-coordinate coordinateContext lat=-34.607367 lng=-58.462690}}
+                                {{g-map-polyline-coordinate coordinateContext lat=-34.604479 lng=-58.458447}}
+                                {{g-map-polyline-coordinate coordinateContext lat=-34.607613 lng=-58.446250}}
+                                {{g-map-polyline-coordinate coordinateContext lat=-34.605593 lng=-58.439303}}
+                                {{g-map-polyline-coordinate coordinateContext lat=-34.602667 lng=-58.433348}}
+                                {{g-map-polyline-coordinate coordinateContext lat=-34.605935 lng=-58.430660}}
+                                {{g-map-polyline-coordinate coordinateContext lat=-34.615454 lng=-58.430028}}
+                                {{g-map-polyline-coordinate coordinateContext lat=-34.615090 lng=-58.429257}}
+                                {{g-map-polyline-coordinate coordinateContext lat=-34.626988 lng=-58.426754}}
+                                {{g-map-polyline-coordinate coordinateContext lat=-34.630625 lng=-58.451546}}
+                                {{g-map-polyline-coordinate coordinateContext lat=-34.607367 lng=-58.462690}}
+              {{/g-map-polyline}}
+
+              {{g-map-polyline context path=decodedPolyline}}
+            {{/g-map}}
+          </div>
         </div>
       </div>
     </div>
