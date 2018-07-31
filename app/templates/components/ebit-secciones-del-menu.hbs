@@ -1,13 +1,21 @@
-{{#if media.isDesktop}}
-  {{#link-to "app.index" class="item large screen only"}}
-    <img class="ui fluid image" src="/enjambre-bit_logo-menu.png" height=35>
-  {{/link-to}}
-{{/if}}
-{{#link-to "app.index" class="item" current-when="app.index"}}Enjambre Bit{{/link-to}}
+{{#link-to "app.index" class="item" current-when="app.index"}}
+  Enjambre Bit{{/link-to}}
 <!-- {{#link-to "app.que-hacemos" class="item" current-when="app.que-hacemos"}}Qué hacemos{{/link-to}} -->
-{{#link-to "app.portfolio" class="item" current-when="app.portfolio"}}Trabajos{{/link-to}}
+{{#link-to "app.portfolio" class="item" current-when="app.portfolio"}}
+  {{#if (media 'isMobile')}}
+    <i class="ui folder open icon"></i>
+  {{/if}}
+  Trabajos{{/link-to}}
 <!-- {{#link-to "app.lab" class="item" current-when="app.lab"}}Lab{{/link-to}} -->
 <!-- {{#link-to "app.sumate" class="item" current-when="app.sumate"}}Sumate{{/link-to}} -->
-{{#link-to "app.contacto" class="item" current-when="app.contacto"}}Contacto{{/link-to}}
-<a class="item"  href="http://blog.enjambrelab.com.ar/" target="_blank" title="Nuestro blog de desarrollo">Blog</a>
+{{#link-to "app.contacto" class="item" current-when="app.contacto"}}
+  {{#if (media 'isMobile')}}
+    <i class="ui envelope icon"></i>
+  {{/if}}
+  Contacto{{/link-to}}
+<a class="item"  href="http://blog.enjambrelab.com.ar/" target="_blank" title="Nuestro blog de desarrollo">
+  {{#if (media 'isMobile')}}
+    <i class="ui file alternate icon"></i>
+  {{/if}}
+  Blog</a>
 {{yield}}

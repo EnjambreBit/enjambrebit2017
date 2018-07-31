@@ -28,6 +28,7 @@ html {
   background: transparent;
   box-shadow: none;
   color: #696969;
+  text-align: justify;
 }
 
 /* Home */
@@ -103,11 +104,13 @@ svg#ebit-logo-skills {
   box-shadow: none;
 }
 
-.ui.right.menu a.item {
+.ui.right.menu a.item,
+.ebit-mobile-redes-home a.item {
   color: #666;
 }
 
-.ui.right.menu a.item:hover {
+.ui.right.menu a.item:hover,
+.ebit-mobile-redes-home a.item:hover {
   color: rgb(220, 0, 0);
   background: none;
 }
@@ -301,9 +304,16 @@ h4.ui.header .sub.header {
   width: 64px;
   height: 64px;
   position: absolute;
-  top: 10px;
+  top: 5px;
   right: 10px;
   background: url("../enjambre-bit_logo-menu.png") top right no-repeat;
+}
+
+.ui.inverted.red.menu.ebit-mobile-menu .item {
+  padding: 10px 10px !important;
+}
+
+.ebit-mobile-redes-home {
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -426,7 +436,7 @@ h4.ui.header .sub.header {
 .ebit-portfolio-descripcion {
   display: block;
   text-align: justify;
-  height: 110px;
+  min-height: 110px;
 }
 
 .isotope,

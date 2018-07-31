@@ -1,9 +1,14 @@
 <div class="ui vertical stripe segment ebit-content">
-  {{#if media.isDesktop}}
-    <div class="ebit-section-bg portfolio"></div>
-  {{/if}}
   <div class="ui container">
-
+    {{#if (media 'isMobile')}}
+      <div class="ui secondary pointing fluid menu">
+        <h1 class="ui big header">
+          <div class="content">
+            Trabajos
+          </div>
+        </h1>
+      </div>
+    {{/if}}
     <div class="ui huge ebit message">
       Porque creemos que la suma de las partes es más que el todo, presentamos todos los trabajos realizados por quienes conformamos Enjambre Bit.
     </div>

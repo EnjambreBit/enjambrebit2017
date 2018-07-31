@@ -31,7 +31,7 @@
     </div>
     <div class="right aligned extra content">
       {{#each tecIcons as |t|}}
-        <img src="/icons/ebit_tec-icon_{{t.slug}}.png" height=30 alt="{{t.name}}" title="{{t.name}}"/>
+        <img src="/icons/ebit_tec-icon_{{t.slug}}.png" height="{{if (media "isMobile") "20" "30"}}" alt="{{t.name}}" title="{{t.name}}"/>
       {{/each}}
     </div>
   </div>
