@@ -139,7 +139,8 @@ svg#ebit-logo-skills {
   color: rgb(220, 0, 0);
 }
 
-.g-map {
+.g-map,
+#map {
   height: 100%;
 }
 .g-map-canvas {

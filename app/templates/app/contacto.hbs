@@ -54,25 +54,7 @@
             </div>
           </div>
           <div class="ten wide column">
-            {{#g-map lat=-34.6170000 lng=-58.4458736 zoom=14 as |context|}}
-            {{#g-map-polyline context
-                                strokeColor="red" strokeWeight="3" strokeOpacity="0.5"
-                                geodesic=true as |coordinateContext|}}
-                                {{g-map-polyline-coordinate coordinateContext lat=-34.607367 lng=-58.462690}}
-                                {{g-map-polyline-coordinate coordinateContext lat=-34.604479 lng=-58.458447}}
-                                {{g-map-polyline-coordinate coordinateContext lat=-34.607613 lng=-58.446250}}
-                                {{g-map-polyline-coordinate coordinateContext lat=-34.605593 lng=-58.439303}}
-                                {{g-map-polyline-coordinate coordinateContext lat=-34.602667 lng=-58.433348}}
-                                {{g-map-polyline-coordinate coordinateContext lat=-34.605935 lng=-58.430660}}
-                                {{g-map-polyline-coordinate coordinateContext lat=-34.615454 lng=-58.430028}}
-                                {{g-map-polyline-coordinate coordinateContext lat=-34.615090 lng=-58.429257}}
-                                {{g-map-polyline-coordinate coordinateContext lat=-34.626988 lng=-58.426754}}
-                                {{g-map-polyline-coordinate coordinateContext lat=-34.630625 lng=-58.451546}}
-                                {{g-map-polyline-coordinate coordinateContext lat=-34.607367 lng=-58.462690}}
-              {{/g-map-polyline}}
-
-              {{g-map-polyline context path=decodedPolyline}}
-            {{/g-map}}
+            {{ebit-map}}
           </div>
         </div>
       </div>
