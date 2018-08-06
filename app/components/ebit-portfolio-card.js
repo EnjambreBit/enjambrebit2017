@@ -5,6 +5,7 @@ export default Ember.Component.extend({
   tecIcons: Ember.computed("tecnologias", function() {
     let tecs = this.get("tecnologias").split(", ");
     var tec_list = [];
+    let name = "";
     tecs.forEach(function(tec) {
       if (tec === "django") {
         name = "Django";
