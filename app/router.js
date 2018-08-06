@@ -6,6 +6,23 @@ const Router = Ember.Router.extend({
   rootURL: config.rootURL
 });
 
+Ember.Router.reopen({
+  rutaAnterior: "",
+
+  didTransition() {
+    this._super(...arguments);
+
+    let rutaActual = this.get("currentRouteName");
+    let haCambiadoDeRuta = this.get("rutaAnterior") !== rutaActual;
+
+    if (haCambiadoDeRuta) {
+      Ember.$("html")[0].scrollTop = 0;
+    }
+
+    this.set("rutaAnterior", rutaActual);
+  }
+});
+
 Router.map(function() {
   this.route("app", function() {
     this.route("quienes-somos");
