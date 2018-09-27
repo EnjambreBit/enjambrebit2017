@@ -32,6 +32,10 @@ export default Ember.Component.extend({
       .delay(1600)
       .fadeIn(800);
 
+    Ember.$(".sumate-al-enjambre")
+      .delay(2000)
+      .fadeIn(800);
+
     Ember.$("#2d_bg").hover(function() {
       Ember.$("#2d_text").fadeIn();
     });

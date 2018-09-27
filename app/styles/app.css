@@ -1,4 +1,6 @@
 /* General */
+@import url("https://fonts.googleapis.com/css?family=Archivo+Narrow");
+
 html {
   font-display: swap;
   font-size: 1em;
@@ -59,6 +61,21 @@ g#code_text > path {
 svg#ebit-logo-skills {
   height: auto !important;
   width: 50% !important;
+}
+
+.sumate-al-enjambre {
+  display: none;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 1.6em;
+  cursor: pointer;
+}
+
+.enjambre-rojo {
+  color: #cc0000;
+}
+
+.enjambre-gris {
+  color: #666666;
 }
 
 /* Headers */
