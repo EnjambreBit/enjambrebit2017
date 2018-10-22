@@ -1,13 +1,13 @@
   <div class="isotope-filter">
     <ul class="filter">
-      <li><a class="active" href="#" data-filter="*">Todo</a></li>
-      <li><a href="#" data-filter=".tics">Educacion y Tics</a></li>
-      <li><a href="#" data-filter=".web">Web</a></li>
-      <li><a href="#" data-filter=".devel">Desarrollo</a></li>
-      <li><a href="#" data-filter=".software">Software a medida</a></li>
+      <li><a class="active" href="#" data-filter="*">{{t "tagTodo"}}</a></li>
+      <li><a href="#" data-filter=".tics">{{t "tagTics"}}</a></li>
+      <li><a href="#" data-filter=".web">{{t "tagWeb"}}</a></li>
+      <li><a href="#" data-filter=".devel">{{t "tagDevel"}}</a></li>
+      <li><a href="#" data-filter=".software">{{t "tagSoftware"}}</a></li>
       <li><a href="#" data-filter=".ux">UI/UX</a></li>
-      <li><a href="#" data-filter=".multimedia">2D, 3D y Multimedia</a></li>
-      <li><a href="#" data-filter=".design">Diseño</a></li>
+      <li><a href="#" data-filter=".multimedia">{{t "tagMultimedia"}}</a></li>
+      <li><a href="#" data-filter=".design">{{t "tagDesign"}}</a></li>
     </ul>
   </div>
 
@@ -16,7 +16,7 @@
     {{#ebit-portfolio-card
       cliente="Dirección de Innovación y Tecnología Educativa"
       producto="Copa TIC"
-      descripcion="En el contexto del mundial de fútbol Rusia 2018, la DiTE diseñó 16 actividades TIC para trabajar en más de 70 escuelas de la Provincia de Buenos Aires. Enjambre Bit desarrolló el sistema web que registró, semana a semana, las actividades realizadas por los distintos equipos de estudiantes secundarios que participan del proyecto."
+      descripcion=(t "epcCopaTIC")
       tecnologias="django, ember, semantic, postgres, rest"
       tags="devel software web tics"
       url="http://copatic.abc.gob.ar"
@@ -27,7 +27,7 @@
     {{#ebit-portfolio-card
       cliente="Dirección Nacional de Museos"
       producto="RMA"
-      descripcion="Estamos trabajando junto a la Dirección Nacional de Museos, desarrollando una plataforma para el relevamiento federal de los museos argentinos. El RMA cuenta con una parte de acceso público y una parte de uso interno para la DNM y organismos provinciales. Actualmente estamos desarrollando las herramientas de análisis estadístico."
+      descripcion=(t "epcRMA")
       tecnologias="django, ember, semantic, postgres, rest"
       tags="devel software web "
       url="https://rma.cultura.gob.ar"
@@ -38,7 +38,7 @@
     {{#ebit-portfolio-card
       cliente="Dirección de Innovación y Tecnología Educativa"
       producto="SUITE"
-      descripcion="Somos el equipo de desarrollo y soporte de la plataforma de seguimiento de acciones territoriales del equipo de la DiTE en Provincia de Buenos Aires, que permite gestionar el trabajo realizado a nivel provincial en las más de 8200 escuelas en los diferentes programas: Conectar Igualdad, Escuelas del Futuro, Primaria Digital, entre otros. "
+      descripcion=(t "epcSuite")
       tecnologias="django, ember, semantic, postgres, rest"
       tags="devel software tics ux design"
       url=false
@@ -60,7 +60,7 @@
     {{#ebit-portfolio-card
       cliente="Spectro Location Intelligence"
       producto="Pulse"
-      descripcion="Trabajamos en el desarrollo de un backend y API  para alojar sistemáticamente datos recolectados por la empresa. Paralelamente se desarrolló un Dashboard web, para realizar Business Intelligence con los datos del backend."
+      descripcion=(t "epcPulse")
       tecnologias="django, ember"
       tags="software"
       url=false
@@ -72,7 +72,7 @@
     {{#ebit-portfolio-card
       cliente="Spectro Location Intelligence"
       producto="Spectro WebCommands"
-      descripcion="Desarrollamos una API que permite lanzar comandos en los equipos de forma remota, para operar con el dashboard."
+      descripcion=(t "epcSpectroWebCommands")
       tecnologias="flask, sqlalchemy, ember, mirage, bootstrap"
       tags="software"
       url=false
@@ -84,7 +84,7 @@
     {{#ebit-portfolio-card
       cliente="Fundación Sadosky"
       producto="Pilas Bloques"
-      descripcion="En el marco de la Iniciativa Program.AR trabajamos con la Fundación Sadosky en el desarrollo de mejoras para el engine de Pilas Bloques. También se desarrollaron nuevas actividades y desafíos."
+      descripcion=(t "epcPilasBloques")
       tecnologias="nodejs, electron, inkscape"
       tags="tics devel multimedia design"
       url="http://pilasbloques.program.ar/"
@@ -95,7 +95,7 @@
     {{#ebit-portfolio-card
       cliente="Fundación Sadosky"
       producto="Pilas Bloques Jr."
-      descripcion="Durante la etapa de desarrollo y mejoras de Pilas Bloques, comenzamos a trabajar con la Fundación en una prueba de concepto para un programa destinado a la enseñanza de programación en bloques para nivel inicial."
+      descripcion=(t "epcPilasBloquesJr")
       tecnologias="nodejs, electron, inkscape"
       tags="tics devel multimedia design"
     }}
@@ -105,7 +105,7 @@
     {{#ebit-portfolio-card
       cliente="World Democratic Forum"
       producto="IGM Map"
-      descripcion="Colaboramos con el World Democratic Forum, adaptando el mapa de Índice de Governanza Mundial y las tablas de datos, para que sean responsive y multiidioma."
+      descripcion=(t "epcIGM")
       tecnologias="html, drupal"
       tags="software web"
       url="http://fdm.rio20.net/?q=es/node/2115"
@@ -116,7 +116,7 @@
     {{#ebit-portfolio-card
       cliente="Fernando Farias / Federico Sartori"
       producto="Podcast Igualdad"
-      descripcion="Acompañamos a dos locutores en la presentación y defensa de su tesis de graduación diseñando y desarrollando un portal de podcasting y videotutoriales que permite a los alumnos del programa Conectar Igualdad trabajar con sus netbooks en la creación de programas de radio. También produjimos material audiovisual de promoción y los videotutoriales que proponen el autoaprendizaje."
+      descripcion=(t "epcPodcastIgualdad")
       tecnologias="django, bootstrap, sqlite, inkscape, gimp, blender, kdenlive, audacity"
       tags="software devel design multimedia"
       proyectoBlog="http://blog.enjambrelab.com.ar/podcast-igualdad/"
@@ -128,7 +128,7 @@
     {{#ebit-portfolio-card
       cliente="Sergio Denis"
       producto="Sergio Denis Online"
-      descripcion="Diseñamos y desarrollamos el sitio web oficial del cantante. También generamos material gráfico y administramos las redes sociales. Actualmente, estamos prototipando una app mobile."
+      descripcion=(t "epcSergioDenis")
       tags="web design multimedia"
       tecnologias="django, ember, semantic, postgres, inkscape, gimp"
       proyectoBlog=false
@@ -140,7 +140,7 @@
     {{#ebit-portfolio-card
       cliente="Precintos Berko S.A."
       producto="Website"
-      descripcion="Diseñamos y desarrollamos el sitio web institucional de la compañía."
+      descripcion=(t "epcBerko")
       tags="web design"
       tecnologias="html, php, bootstrap"
       proyectoBlog=false
