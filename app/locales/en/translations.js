@@ -16,6 +16,9 @@ export default {
 
   // Home
   EstamosBuscando: "We are recruiting",
+  Somos: "We are",
+  SPONSORBRONCE: "BRONZE SPONSOR",
+  en: "at",
 
   // Trabajos
   trabajosFrase:

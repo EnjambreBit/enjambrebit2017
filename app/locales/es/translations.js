@@ -15,6 +15,9 @@ export default {
 
   // Home
   EstamosBuscando: "Estamos buscando",
+  Somos: "Somos",
+  SPONSORBRONCE: "SPONSOR BRONCE",
+  en: "en",
 
   // Trabajos
   trabajosFrase:
