@@ -39,4 +39,4 @@ deploy:
 	@echo "Moviendo archivos..."
 	@cp -r dist/* publish/
 	@echo "Realizando deploy..."
-	@cd spider; git add .; git config user.email "hugoruscitti@gmail.com"; git config user.name "Hugo Ruscitti"; git commit -am 'rebuild' --allow-empty; git push -f
+	@cd publish; git add .; git config user.email "info@enjambrebit.com"; git config user.name "Enjambrebit"; git commit -am 'rebuild' --allow-empty; git push -f
