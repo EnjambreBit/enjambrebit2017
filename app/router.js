@@ -31,6 +31,7 @@ Router.map(function() {
     this.route("contacto");
     this.route("que-hacemos");
     this.route("sumate");
+    this.route('pilas');
   });
 });
 

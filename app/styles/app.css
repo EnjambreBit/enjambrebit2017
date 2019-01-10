@@ -89,6 +89,10 @@ svg#ebit-logo-skills {
   color: #db2828;
 }
 
+.ui.red.header a.link-gris {
+  color: rgba(0, 0, 0, 0.6);
+}
+
 /* Menu */
 .ui.menu .item {
   padding: 0em 0.9em;

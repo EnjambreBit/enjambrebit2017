@@ -35,6 +35,8 @@ export default {
   tagMobile: "Mobile",
 
   // Portfolio-cards
+  epcSatellogic:
+    "We are working together with Satellogic in the development of tools for internal use to track and document the processes of design, production and manufacture of components for their satellites.",
   epcCopaTIC:
     "During the FIFA World Cup Rusia 2018, the DiTE designed 16 TIC activities to work within more than 70 schools all around Buenos Aires Province. Enjambre Bit developed the web app used to weekly register and monitor all the activities performed by highschool teams participating in the project.",
   epcRMA:

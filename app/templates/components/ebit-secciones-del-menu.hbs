@@ -5,17 +5,32 @@
   {{#if (media 'isMobile')}}
     <i class="ui folder open icon"></i>
   {{/if}}
-  {{t "Trabajos"}}{{/link-to}}
+  {{t "Trabajos"}}
+{{/link-to}}
+
 <!-- {{#link-to "app.lab" class="item" current-when="app.lab"}}Lab{{/link-to}} -->
+
+{{!-- {{#link-to "app.pilas" class="item" current-when="app.pilas"}}Pilas{{/link-to}} --}}
+
 {{#link-to "app.contacto" class="item" current-when="app.contacto"}}
   {{#if (media 'isMobile')}}
     <i class="ui envelope icon"></i>
   {{/if}}
-  {{t "Contacto"}}{{/link-to}}
+  {{t "Contacto"}}
+{{/link-to}}
+
 <a class="item"  href="http://blog.enjambrelab.com.ar/" target="_blank" title="{{t "NuestroBlogDeDesarrollo"}}">
   {{#if (media 'isMobile')}}
     <i class="ui file alternate icon"></i>
   {{/if}}
-  {{t "Blog"}}</a>
-{{#link-to "app.sumate" class="item" current-when="app.sumate"}}{{t "Sumate"}}{{/link-to}}
+  {{t "Blog"}}
+</a>
+
+{{#link-to "app.sumate" class="item" current-when="app.sumate"}}
+  {{#if (media 'isMobile')}}
+    <i class="ui plus icon"></i>
+  {{/if}}
+  {{t "Sumate"}}
+{{/link-to}}
+
 {{yield}}

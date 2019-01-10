@@ -34,6 +34,8 @@ export default {
   tagMobile: "Móvil",
 
   // Portfolio-cards
+  epcSatellogic:
+    "Estamos trabajando junto a Satellogic en el desarrollo de herramientas de uso interno para el seguimiento y documentación de los procesos de diseño, producción y fabricación de componentes para sus satélites.",
   epcCopaTIC:
     "En el contexto del mundial de fútbol Rusia 2018, la DiTE diseñó 16 actividades TIC para trabajar en más de 70 escuelas de la Provincia de Buenos Aires. Enjambre Bit desarrolló el sistema web que registró, semana a semana, las actividades realizadas por los distintos equipos de estudiantes secundarios que participan del proyecto.",
   epcRMA:

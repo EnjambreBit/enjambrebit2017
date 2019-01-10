@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: "enjambrebit2017",
     environment: environment,
     rootURL: "/",
-    locationType: "auto",
+    locationType: "hash",
     i18n: {
       defaultLocale: "es"
     },

@@ -23,7 +23,13 @@
         {{else}}
           {{producto}}
         {{/if}}
-        <div class="ui sub header">{{cliente}}</div>
+        <div class="ui sub header">
+          {{#if client_url}}
+            <a href="{{client_url}}" target="_blank" title="{{cliente}}" class="link-gris">{{cliente}}</a>
+          {{else}}
+            {{cliente}}
+          {{/if}}
+        </div>
       </h4>
       <div class="meta">
         <span class="ebit-portfolio-descripcion">{{descripcion}}</span>

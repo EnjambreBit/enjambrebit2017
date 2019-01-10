@@ -14,14 +14,15 @@
   <div class="ui two column stackable grid">
 
     {{#ebit-portfolio-card
-      cliente="Dirección de Innovación y Tecnología Educativa"
-      producto="Copa TIC"
-      descripcion=(t "epcCopaTIC")
+      cliente="Satellogic"
+      producto="Sistemas Internos"
+      descripcion=(t "epcSatellogic")
       tecnologias="django, ember, semantic, postgres, rest"
-      tags="devel software web tics"
-      url="http://copatic.abc.gob.ar"
+      tags="devel software"
+      url=false
+      client_url="https://www.satellogic.com/"
     }}
-      <img src="/assets/portfolio/ebit_portfolio_copa-tic.jpg" class="visible content">
+      <img src="/assets/portfolio/ebit_portfolio_satellogic.jpg" class="visible content">
     {{/ebit-portfolio-card}}
 
     {{#ebit-portfolio-card
@@ -33,6 +34,17 @@
       url="https://rma.cultura.gob.ar"
     }}
       <img src="/assets/portfolio/ebit_portfolio_dnm-rma.jpg" class="visible content">
+    {{/ebit-portfolio-card}}
+
+    {{#ebit-portfolio-card
+      cliente="Dirección de Innovación y Tecnología Educativa"
+      producto="Copa TIC"
+      descripcion=(t "epcCopaTIC")
+      tecnologias="django, ember, semantic, postgres, rest"
+      tags="devel software web tics"
+      url="http://copatic.abc.gob.ar"
+    }}
+      <img src="/assets/portfolio/ebit_portfolio_copa-tic.jpg" class="visible content">
     {{/ebit-portfolio-card}}
 
     {{#ebit-portfolio-card
