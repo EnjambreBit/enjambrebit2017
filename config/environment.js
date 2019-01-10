@@ -28,7 +28,7 @@ module.exports = function(environment) {
 
   ENV["g-map"] = {
     libraries: ["places", "geometry"],
-    key: "AIzaSyC5WRH8sbH1m4sF4t9NMRCl-cOpRLCYztY"
+    key: "AIzaSyDgcyvgvlGCW9U9izgVu3nkiIxbVJy6r-M"
   };
 
   if (environment === "development") {
