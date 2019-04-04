@@ -10,7 +10,12 @@
 
 <!-- {{#link-to "app.lab" class="item" current-when="app.lab"}}Lab{{/link-to}} -->
 
-{{#link-to "app.pilas" class="item" current-when="app.pilas"}}Pilas Engine{{/link-to}}
+{{#link-to "app.pilas" class="item" current-when="app.pilas"}}
+  {{#if (media 'isMobile')}}
+    <i class="ui battery full icon"></i>
+  {{/if}}
+  Pilas Engine
+{{/link-to}}
 
 {{#link-to "app.contacto" class="item" current-when="app.contacto"}}
   {{#if (media 'isMobile')}}
