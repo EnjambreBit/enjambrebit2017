@@ -60,5 +60,19 @@ export default {
     "Diseñamos y desarrollamos el sitio web institucional de la compañía.",
 
   // Sumate
-  SumateAlEnjambre: "Sumate al Enjambre"
+  SumateAlEnjambre: "Sumate al Enjambre",
+
+  // Pilas Engine (PilasEngineParagpaphNumber)
+  pep1:
+    "La versión 2 de Pilas Engine está completamente desarrollada sobre Phaser 3 y HTML 5. Incluye un editor y una serie de actores (o sprites) pre-diseñados, para facilitar la exploración por parte de los chicos.",
+  pep2:
+    "En esta secuela, queremos tomar lo mejor de <a href='http://pilas-engine.com.ar/' target='_blank'>Pilas 1</a> y darle a los usuarios la posibilidad de compartir sus juegos en la Web. El editor y también los juegos creados, se pueden usar de manera online o sin conexión.",
+  pep3:
+    "La pantalla de inicio permite al usuario acceder a las diferentes secciones que podrían invitar a los chicos a descubrir lo que es programar. Por ejemplo, cuenta con un manual, una sección de mini-juegos, un catálogo de personajes pre-diseñados y el editor:",
+  pep4:
+    "La parte mas interesante es el editor. Desde allí, se puede construir una escena completa sin la necesidad de escribir código. Se pueden mover, agregar o quitar los personajes iniciales, cambiar sus propiedades o editar su código:",
+  pep5:
+    "Cuando se cliquea el botón Ejecutar, el juego comienza. Podemos jugar y experimentar lo que verán los jugadores, e incluso está la posibilidad de usar el intérprete para hacer pruebas:",
+  pep6:
+    "Si se cliquea el boton Pausa, se activa un nuevo modo. Es el modo de inspección, donde se pueden reproducir las transformaciones sufridas por los actores, paso a paso:"
 };

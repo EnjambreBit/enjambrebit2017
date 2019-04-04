@@ -61,5 +61,19 @@ export default {
     "We designed and developed the institutional website for the company.",
 
   // Sumate
-  SumateAlEnjambre: "Join Enjambre"
+  SumateAlEnjambre: "Join Enjambre",
+
+  // Pilas Engine (PilasEngineParagpaphNumber)
+  pep1:
+    "Version 2 of Pilas Engin is entirely developed over Phaser 3 and HTML 5. It includes an editor and a series of pre-designed actors (or sprites) to make it esasy for children to explore.",
+  pep2:
+    "In this sequel, we want to take the best of <a href='http://pilas-engine.com.ar/' target='_blank'>Pilas 1</a> and give the users the possibility to share their games through the web. The editor as well as the games can be used online and offline.",
+  pep3:
+    "The initial screen allows the user to access the different sections that could invite children to discover programming. For example, there is a manual, a mini-games section, a pre-designed characters catalog and the editor:",
+  pep4:
+    "The most interesting part is the editor. From there you can build the complete scene without the need to code. You can move, add or remove the initial characters, change their properties or edit the code:",
+  pep5:
+    "When the “play” (ejecutar) button is pressed, the game starts. We can play and experience what the players will see and we even have the possibility to use the interpreter to do some testing:",
+  pep6:
+    "If we press the “pause” button, a new mode is activated. It’s an inspection mode, where we can replay the actors’ transformations step by step:"
 };
