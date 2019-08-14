@@ -33,8 +33,11 @@ export default {
   tagMultimedia: "2D, 3D & Multimedia",
   tagDesign: "Design",
   tagMobile: "Mobile",
+  tagSocial: "Social",
 
   // Portfolio-cards
+  epcPresentes:
+    "Along with Presentes, a regional LGBT+ news agency, we are working on developing a web platform to map the violence cases all around the country.",
   epcSatellogic:
     "We are working together with Satellogic in the development of tools for internal use to track and document the processes of design, production and manufacture of components for their satellites.",
   epcCopaTIC:

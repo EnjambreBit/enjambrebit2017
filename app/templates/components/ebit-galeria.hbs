@@ -1,6 +1,7 @@
   <div class="isotope-filter">
     <ul class="filter">
       <li><a class="active" href="#" data-filter="*">{{t "tagTodo"}}</a></li>
+      <li><a href="#" data-filter=".social">{{t "tagSocial"}}</a></li>
       <li><a href="#" data-filter=".tics">{{t "tagTics"}}</a></li>
       <li><a href="#" data-filter=".web">{{t "tagWeb"}}</a></li>
       <li><a href="#" data-filter=".devel">{{t "tagDevel"}}</a></li>
@@ -12,6 +13,17 @@
   </div>
 
   <div class="ui two column stackable grid">
+
+    {{#ebit-portfolio-card
+      cliente="Agencia Presentes"
+      producto="Mapa de violencias LGBT+"
+      descripcion=(t "epcPresentes")
+      tecnologias="django, ember, postgres, rest"
+      tags="devel software social"
+      url=false
+    }}
+      <img src="/assets/portfolio/ebit_portfolio_presentes.jpg" class="visible content">
+    {{/ebit-portfolio-card}}
 
     {{#ebit-portfolio-card
       cliente="Satellogic"
