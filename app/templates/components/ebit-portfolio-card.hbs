@@ -5,7 +5,18 @@
         <div class="ui dimmer">
           <div class="content">
             <div class="center">
-              <a class="ui inverted button" href="{{proyectoBlog}}" target="_blank" title="Leer mas sobre {{producto}} en nuestro blog.">Leer más en el Blog</a>
+              <a class="ui inverted button" href="{{proyectoBlog}}" target="_blank" title="{{t 'epcLeerMasEnElBlog'}}">{{t "epcLeerMasEnElBlog"}}</a>
+            </div>
+          </div>
+        </div>
+        {{yield}}
+      </div>
+    {{else if nota}}
+      <div class="ui blurring dimmable image ebit-blog">
+        <div class="ui dimmer">
+          <div class="content">
+            <div class="center">
+              <a class="ui inverted button" href="{{nota}}" target="_blank" title="{{t 'epcVerNota'}}">{{t 'epcVerNota'}}</a>
             </div>
           </div>
         </div>
@@ -30,14 +41,25 @@
             {{cliente}}
           {{/if}}
         </div>
+        {{#if nota}}
+          <div class="meta">
+            <a href="{{nota}}" href="{{nota}}" target="_blank" title="{{t 'epcVerNota'}}">+ Info</a>
+          </div>
+        {{else}}
+          <div class="nota_placeholder">
+          </div>
+        {{/if}}
       </h4>
+
       <div class="meta">
         <span class="ebit-portfolio-descripcion">{{descripcion}}</span>
       </div>
     </div>
     <div class="right aligned extra content">
       {{#each tecIcons as |t|}}
-        <img src="/icons/ebit_tec-icon_{{t.slug}}.png" height="{{if (media "isMobile") "20" "30"}}" alt="{{t.name}}" title="{{t.name}}"/>
+        <a href="{{t.url}}" target="_blank" title="{{t.name}}">
+          <img src="/icons/ebit_tec-icon_{{t.slug}}.png" height="{{if (media "isMobile") "20" "30"}}" alt="{{t.name}}" title="{{t.name}}"/>
+        </a>
       {{/each}}
     </div>
   </div>

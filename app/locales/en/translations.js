@@ -24,6 +24,10 @@ export default {
   trabajosFrase:
     "We believe that the whole is greater than the sum of its parts. Because of that, here we present pieces of work made by the Enjambre Bit team.",
 
+  // Titulos y alts de imágenes
+  epcLeerMasEnElBlog: "Read more on our Blog",
+  epcVerNota: "View article",
+
   // Tags de trabajos
   tagTodo: "All",
   tagTics: "Education y TICs",

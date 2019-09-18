@@ -23,6 +23,10 @@ export default {
   trabajosFrase:
     "Porque creemos que el todo es más que la suma de las partes, presentamos todos los trabajos realizados por quienes conformamos Enjambre Bit.",
 
+  // Titulos y alts de imágenes
+  epcLeerMasEnElBlog: "Leer más en el Blog",
+  epcVerNota: "Ver nota",
+
   // Tags de trabajos
   tagTodo: "Todo",
   tagTics: "Educación y TICs",
