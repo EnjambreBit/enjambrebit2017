@@ -10,9 +10,11 @@ export default {
   // Redes
   redesFacebook: "Enjambre Bit on Facebook",
   redesTwitter: "Enjambre Bit on Twitter",
+  redesLinkedin: "Enjambre Bit on LinkedIn",
   redesInstagram: "Enjambre Bit on Instagram",
   redesGitHub: "Enjambre Bit on GitHub",
   redesYouTube: "Enjambre Bit on YouTube",
+  redesContactUs: "Contact Us",
 
   // Home
   EstamosBuscando: "We are recruiting",
@@ -30,7 +32,7 @@ export default {
 
   // Tags de trabajos
   tagTodo: "All",
-  tagTics: "Education y TICs",
+  tagTics: "Education",
   tagWeb: "Web",
   tagDevel: "Development",
   tagSoftware: "Custom Software",
@@ -40,16 +42,26 @@ export default {
   tagSocial: "Social",
 
   // Portfolio-cards
+  epcPresentesMapaLGBT:
+    "Along with Presentes, a regional LGBT+ news agency, we developed a web platform to map violence cases all around the country.",
+  epcPresentesCandidates2019:
+    "We designed and implemented a microsite to show the proposals of the LGBTI+ candidates that run for the 2019 general elections in Argentina.",
+  epcPresentesMapaMatrimonioMexico:
+    "For this project, we built an interactive map showing the advance of equality marriage in the diferent Mexican states.",
   epcPresentes:
     "Along with Presentes, a regional LGBT+ news agency, we are working on developing a web platform to map the violence cases all around the country.",
+  epcSatellogicWernher:
+    "We are working together with Satellogic in the developement and support of the system they use to manage the design of the parts used in their satellites.",
+  epcSatellogicKorolev:
+    "We are in charge of the developement of the documentation and training system for MAITE, the factory where Satellogic manufactures the components for their satellites.",
   epcSatellogic:
     "We are working together with Satellogic in the development of tools for internal use to track and document the processes of design, production and manufacture of components for their satellites.",
   epcCopaTIC:
     "During the FIFA World Cup Rusia 2018, the DiTE designed 16 TIC activities to work within more than 70 schools all around Buenos Aires Province. Enjambre Bit developed the web app used to weekly register and monitor all the activities performed by highschool teams participating in the project.",
   epcRMA:
-    "We are working with the National Museum Direction developing a platform to survey Argentinean museums all around the country. The RMA has a section open to the public and another for internal use of the NMD and Province authorities. At this moment, we are developing tools for statistic analysis.",
+    "We worked together with the National Museums Direction developing a platform to survey Argentinean museums all around the country. The RMA has a section open to the public and another for internal use of the NMD and Province authorities. At this moment, we are developing tools for statistic analysis.",
   epcSuite:
-    "We are the development and tech support team of the platform used to survey ground work of the DiTE team in Buenos Aires Province. The system allows to manage the tasks performed all around the province  in more than 8200 schools through different TIC plans: Conectar Igualdad, Escuelas del Futuro, Primaria Digital, among others.",
+    "We were the development and tech support team of the platform used to survey ground work of the DiTE team in Buenos Aires Province. The system allows to manage the tasks performed all around the province  in more than 8200 schools through different TIC plans: Conectar Igualdad, Escuelas del Futuro, Primaria Digital, among others.",
   epcPulse:
     "We worked in the development of a backend and API to systematically allocate data collected by the company. In parallel, we developed a Web Dashboard to do Busines Intelligence using the data collected by the backend.",
   epcSpectroWebCommands:
@@ -63,7 +75,7 @@ export default {
   epcPodcastIgualdad:
     "We supported two broadcasters in the presentation and defense of their graduation thesis, designing and developing a podcasting portal, and creating video tutorials that allow students from Conectar Igualdad to create their own radio shows using their netbooks. We also produced audiovisual promotional material and the videotutorials that promote self learning.",
   epcSergioDenis:
-    "We designed and programmed the singers official website. We also create graphical material and do social media. We are now prototiping a mobile app.",
+    "We designed and programmed the singers official website. We also create graphical material and do social media.",
   epcBerko:
     "We designed and developed the institutional website for the company.",
 

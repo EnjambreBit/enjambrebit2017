@@ -11,7 +11,9 @@ export default Ember.Component.extend({
       });
     });
 
-    Ember.$(".isotope-filter .filter li a").click(function() {
+    Ember.$(
+      ".isotope-filter .filter.categorias li a, .isotope-filter .filter.clientes li a"
+    ).click(function() {
       Ember.$(".isotope-filter .filter li a").removeClass("active");
 
       Ember.$(this).addClass("active");

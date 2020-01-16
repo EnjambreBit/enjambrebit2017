@@ -9,9 +9,11 @@ export default {
   // Redes
   redesFacebook: "Enjambre Bit en Facebook",
   redesTwitter: "Enjambre Bit en Twitter",
+  redesLinkedin: "Enjambre Bit en LinkedIn",
   redesInstagram: "Enjambre Bit en Instagram",
   redesGitHub: "Enjambre Bit en GitHub",
   redesYouTube: "Enjambre Bit en YouTube",
+  redesContactUs: "Contactanos",
 
   // Home
   EstamosBuscando: "Estamos buscando",
@@ -29,26 +31,33 @@ export default {
 
   // Tags de trabajos
   tagTodo: "Todo",
-  tagTics: "Educación y TICs",
+  tagTics: "Educación",
   tagWeb: "Web",
   tagDevel: "Desarrollo",
   tagSoftware: "Software a medida",
+  tagPilasEngine: "Pilas Engine",
   tagMultimedia: "2D, 3D y Multimedia",
   tagDesign: "Diseño",
   tagMobile: "Móvil",
   tagSocial: "Social",
 
   // Portfolio-cards
-  epcPresentes:
-    "Junto a Presentes, una agencia regional de noticias LGBT+, estamos trabajando en el armado de una plataforma web para mapear los hechos de violencia LGBT+ en todo el país.",
-  epcSatellogic:
-    "Estamos trabajando junto a Satellogic en el desarrollo de herramientas de uso interno para el seguimiento y documentación de los procesos de diseño, producción y fabricación de componentes para sus satélites.",
+  epcPresentesMapaLGBT:
+    "Junto a Presentes, una agencia regional de noticias LGBT+, desarrollamos una plataforma web para mapear los hechos de violencia LGBT+ en todo el país.",
+  epcPresentesCandidates2019:
+    "Diseñamos e implementamos un micrositio para mostrar las propuestas de les candidates LGBTI+ que participaron de las elecciones generales argentinas de 2019.",
+  epcPresentesMapaMatrimonioMexico:
+    "Para este proyecto, armamos un mapa interactivo que muestra el avance del matrimonio igualitario en las diferentes estados mexicanos.",
+  epcSatellogicWernher:
+    "Acompañamos a Satellogic en el desarrollo y mantenimiento de su sistema de administración de diseño de partes para los satélites.",
+  epcSatellogicKorolev:
+    "Llevamos adelante el desarrollo de su sistema de documentación y training de MAITE, la planta donde Satellogic fabrica los componentes para sus satélites.",
   epcCopaTIC:
     "En el contexto del mundial de fútbol Rusia 2018, la DiTE diseñó 16 actividades TIC para trabajar en más de 70 escuelas de la Provincia de Buenos Aires. Enjambre Bit desarrolló el sistema web que registró, semana a semana, las actividades realizadas por los distintos equipos de estudiantes secundarios que participan del proyecto.",
   epcRMA:
-    "Estamos trabajando junto a la Dirección Nacional de Museos, desarrollando una plataforma para el relevamiento federal de los museos argentinos. El RMA cuenta con una parte de acceso público y una parte de uso interno para la DNM y organismos provinciales. Actualmente estamos desarrollando las herramientas de análisis estadístico.",
+    "Trabajamos junto a la Dirección Nacional de Museos, desarrollando una plataforma para el relevamiento federal de los museos argentinos. El RMA cuenta con una parte de acceso público y una parte de uso interno para la DNM y organismos provinciales. Actualmente estamos desarrollando las herramientas de análisis estadístico.",
   epcSuite:
-    "Somos el equipo de desarrollo y soporte de la plataforma de seguimiento de acciones territoriales del equipo de la DiTE en Provincia de Buenos Aires, que permite gestionar el trabajo realizado a nivel provincial en las más de 8200 escuelas en los diferentes programas: Conectar Igualdad, Escuelas del Futuro, Primaria Digital, entre otros.",
+    "Fuimos el equipo de desarrollo y soporte de la plataforma de seguimiento de acciones territoriales del equipo de la DiTE en Provincia de Buenos Aires, que permite gestionar el trabajo realizado a nivel provincial en las más de 8200 escuelas en los diferentes programas: Conectar Igualdad, Escuelas del Futuro, Primaria Digital, entre otros.",
   epcPulse:
     "Trabajamos en el desarrollo de un backend y API  para alojar sistemáticamente datos recolectados por la empresa. Paralelamente se desarrolló un Dashboard web, para realizar Business Intelligence con los datos del backend.",
   epcSpectroWebCommands:
@@ -62,7 +71,7 @@ export default {
   epcPodcastIgualdad:
     "Acompañamos a dos locutores en la presentación y defensa de su tesis de graduación diseñando y desarrollando un portal de podcasting y videotutoriales que permite a los alumnos del programa Conectar Igualdad trabajar con sus netbooks en la creación de programas de radio. También produjimos material audiovisual de promoción y los videotutoriales que proponen el autoaprendizaje.",
   epcSergioDenis:
-    "Diseñamos y desarrollamos el sitio web oficial del cantante. También generamos material gráfico y administramos las redes sociales. Actualmente, estamos prototipando una app mobile.",
+    "Diseñamos y desarrollamos el sitio web oficial del cantante. También generamos material gráfico y administramos las redes sociales.",
   epcBerko:
     "Diseñamos y desarrollamos el sitio web institucional de la compañía.",
 

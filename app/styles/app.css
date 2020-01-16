@@ -344,31 +344,38 @@ h4.ui.header .sub.header {
 /*-----------------------------------------------------------------------------------*/
 /*      PORTFOLIO
 /*-----------------------------------------------------------------------------------*/
-.filter {
+.filter,
+.filter-clientes {
   list-style: none;
   margin: 0 0 20px 0;
 }
-.filter li {
+.filter li,
+.filter-clientes li {
   display: inline;
-  font-weight: 900;
-  font-size: 13px;
+  font-weight: 700;
+  font-size: 12px;
   text-transform: uppercase;
   line-height: 1;
   color: #c5c5c5;
 }
-.filter li:after {
+.filter li:after,
+.filter-clientes li:after {
   display: inline-block;
   content: "/";
   padding: 0 13px 0 15px;
 }
-.filter li a {
+.filter li a,
+.filter-clientes li a {
   color: #656565;
 }
 .filter li a.active,
-.filter li a:hover {
+.filter li a:hover,
+.filter-clientes li a:active,
+.filter-clientes li a:hover {
   color: rgb(220, 0, 0);
 }
-.filter li:last-child:after {
+.filter li:last-child:after,
+.filter-clientes li:last-chid:after {
   display: none;
 }
 
