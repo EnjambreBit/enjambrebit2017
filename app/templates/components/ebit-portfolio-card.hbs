@@ -35,6 +35,7 @@
           {{producto}}
         {{/if}}
         <div class="ui sub header">
+          <span class="">Cliente: </span>
           {{#if client_url}}
             <a href="{{client_url}}" target="_blank" title="{{cliente}}" class="link-gris">{{cliente}}</a>
           {{else}}
@@ -43,7 +44,7 @@
         </div>
         {{#if nota}}
           <div class="meta">
-            <a href="{{nota}}" href="{{nota}}" target="_blank" title="{{t 'epcVerNota'}}">+ Info</a>
+            <a href="{{nota}}" href="{{nota}}" target="_blank" title="{{t 'epcVerNota'}}">Ver más</a>
           </div>
         {{else}}
           <div class="nota_placeholder">

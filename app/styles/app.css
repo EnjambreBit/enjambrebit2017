@@ -362,7 +362,7 @@ h4.ui.header .sub.header {
 .filter-clientes li:after {
   display: inline-block;
   content: "/";
-  padding: 0 13px 0 15px;
+  padding: 0 8px 0 8px;
 }
 .filter li a,
 .filter-clientes li a {
