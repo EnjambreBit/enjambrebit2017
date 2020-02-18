@@ -1,31 +1,36 @@
   <div class="isotope-filter">
     <ul class="filter categorias" data-filter-group="categorias">
-      <li><a class="active" href="#" data-filter="*">{{t "tagTodo"}}</a></li>
+      <li class="ttu red">{{t "tagCategorias"}}: </li>
+      <li><a class="active" href="#" data-filter="*">{{t "tagTodas"}}</a></li>
       <li><a href="#" data-filter=".social">{{t "tagSocial"}}</a></li>
       <li><a href="#" data-filter=".tics">{{t "tagTics"}}</a></li>
       <li><a href="#" data-filter=".web">{{t "tagWeb"}}</a></li>
       <li><a href="#" data-filter=".devel">{{t "tagDevel"}}</a></li>
       <li><a href="#" data-filter=".software">{{t "tagSoftware"}}</a></li>
-      <li><a href="#" data-filter=".mobile">{{t "tagMobile"}}</a></li>
+      {{!-- <li><a href="#" data-filter=".mobile">{{t "tagMobile"}}</a></li> --}}
       <li><a href="#" data-filter=".pilas">{{t "tagPilasEngine"}}</a></li>
       <li><a href="#" data-filter=".ux">UI/UX</a></li>
       <li><a href="#" data-filter=".multimedia">{{t "tagMultimedia"}}</a></li>
       <li><a href="#" data-filter=".design">{{t "tagDesign"}}</a></li>
     </ul>
-    {{!-- <ul class="filter clientes" data-filter-group="clientes">
-      <li><a class="active" href="#" data-filter="*">{{t "tagTodo"}}</a></li>
-      <li><a href="#" data-filter=".satellogic">Satellogic</a></li>
-      <li><a href="#" data-filter=".presentes">Presentes</a></li>
-      <li><a href="#" data-filter=".sadosky">Fundación Sadosky</a></li>
-      <li><a href="#" data-filter=".spectro">Location Intelligence</a></li>
-      <li><a href="#" data-filter=".dnm">DNM</a></li>
-      <li><a href="#" data-filter=".denis">Sergio Denis</a></li>
-      <li><a href="#" data-filter=".farias">Podcast Igualdad</a></li>
-      <li><a href="#" data-filter=".dite">DITE</a></li>
-      <li><a href="#" data-filter=".berko">Berko SA</a></li>
-      <li><a href="#" data-filter=".wdf">W.D.F.</a></li>
-    </ul> --}}
+    <ul class="filter clientes" data-filter-group="clientes">
+      <li class="ttu red">{{t "tagClientes"}}: </li>
+      <li><a class="active" href="#" data-filter="*">{{t "tagTodos"}}</a></li>
+      <li><a class="desaturate" href="#" data-filter=".satellogic"><img class="v-mid" src="/assets/portfolio/filtros/filtro_satellogic.png" alt="Satellogic" title="Satellogic" height="40"></a></li>
+      <li><a class="desaturate" href="#" data-filter=".presentes"><img class="v-mid" src="/assets/portfolio/filtros/filtro_presentes.png" alt="Agencia Presentes" title="Agencia Presentes" height="40"></a></li>
+      <li><a class="desaturate" href="#" data-filter=".sadosky"><img class="v-mid" src="/assets/portfolio/filtros/filtro_sadosky.png" alt="Fundación Sadosky" title="Fundación Sadosky" height="40"></a></li>
+      <li><a class="desaturate" href="#" data-filter=".dnm"><img class="v-mid" src="/assets/portfolio/filtros/filtro_mcn.png" alt="Ministerio de Cultura Argentina" title="Ministerio de Cultura Argentina" height="40"></a></li>
+      {{!-- <li><a class="desaturate" href="#" data-filter=".denis">Sergio Denis</a></li> --}}
+      {{!-- <li><a class="desaturate" href="#" data-filter=".farias">Podcast Igualdad</a></li> --}}
+      <li><a class="desaturate" href="#" data-filter=".dite"><img class="v-mid" src="/assets/portfolio/filtros/filtro_dte.png" alt="Dirección de Tecnología Educativa" title="Dirección de Tecnología Educativa" height="45"></a></li>
+      <li><a class="desaturate" href="#" data-filter=".soyfinisher"><img class="v-mid" src="/assets/portfolio/filtros/filtro_soy-finisher.png" alt="SoyFinisher" title="SoyFinisher" height="45"></a></li>
+      <li><a class="desaturate" href="#" data-filter=".berko"><img class="v-mid" src="/assets/portfolio/filtros/filtro_berko.png" alt="Precintos Berko SA" title="Precintos Berko SA" height="45"></a></li>
+      <li><a class="desaturate" href="#" data-filter=".spectro"><img class="v-mid" src="/assets/portfolio/filtros/filtro_spectro.png" alt="Spectro Location Intelligence" title="Spectro Location Intelligence" height="30"></a></li>
+      <li><a class="desaturate" href="#" data-filter=".wdf"><img class="v-mid" src="/assets/portfolio/filtros/filtro_wdf.png" alt="World Democratic Forum" title="World Democratic Forum" height="40"></a></li>
+    </ul>
   </div>
+
+  {{!-- <h2 class="logo-cliente">Cliente: </h2> --}}
 
   <div class="ui two column stackable grid">
 
@@ -42,6 +47,18 @@
       <img src="/assets/portfolio/ebit_portfolio_presentes-mapa-lgbt.jpg" class="visible content">
     {{/ebit-portfolio-card}} --}}
 
+
+    {{!-- {{#ebit-portfolio-card
+      cliente="The Pet Wagon"
+      producto="Website"
+      descripcion=(t "epcThePetWagon")
+      tecnologias="html wordpress"
+      tags="web tpw"
+      client_url="https://www.thepetwagon.com"
+    }}
+      <img src="/assets/portfolio/ebit_portfolio_tpw.jpg" class="visible content">
+    {{/ebit-portfolio-card}} --}}
+
     {{#ebit-portfolio-card
       cliente="Agencia Presentes"
       producto="Mapa de violencias LGBT+"
@@ -50,23 +67,48 @@
       tags="devel software social presentes"
       url="https://mapa.agenciapresentes.com.ar/"
       client_url="https://agenciapresentes.com.ar"
+      proyectoBlog="https://blog.enjambrelab.com.ar/desarrollamos-un-mapeo-colectivo-de-crimenes-de-odio-2019-para-la-agencia-presentes-lgtb/"
       nota="https://blog.enjambrelab.com.ar/desarrollamos-un-mapeo-colectivo-de-crimenes-de-odio-2019-para-la-agencia-presentes-lgtb/"
     }}
       <img src="/assets/portfolio/ebit_portfolio_presentes-mapa-lgbt.jpg" class="visible content">
     {{/ebit-portfolio-card}}
 
-    {{#ebit-portfolio-card
-      cliente="Agencia Presentes"
-      producto="Candidates 2019"
-      descripcion=(t "epcPresentesCandidates2019")
-      tecnologias="django, ember, postgres, rest, tachyons, osm"
-      tags="devel software social presentes"
-      url="https://candidates2019.agenciapresentes.org"
-      client_url="https://agenciapresentes.com.ar"
-      nota=false
-    }}
-      <img src="/assets/portfolio/ebit_portfolio_presentes-candidates.jpg" class="visible content">
-    {{/ebit-portfolio-card}}
+      {{#ebit-portfolio-card
+        cliente="Dirección Nacional de Museos, Ministerio de Cultura Argentina"
+        producto="RMA"
+        descripcion=(t "epcRMA")
+        tecnologias="django, ember, semantic, postgres, rest"
+        tags="devel software web dnm"
+        url="https://rma.cultura.gob.ar"
+        client_url="https://www.argentina.gob.ar/cultura/patrimonio/museos"
+      }}
+        <img src="/assets/portfolio/ebit_portfolio_dnm-rma.jpg" class="visible content">
+      {{/ebit-portfolio-card}}
+
+
+      {{#ebit-portfolio-card
+        cliente="Satellogic"
+        producto="Wernher"
+        descripcion=(t "epcSatellogicWernher")
+        tecnologias="django, tachyons, postgres"
+        tags="devel software satellogic"
+        url=false
+        client_url="https://www.satellogic.com/"
+      }}
+        <img src="/assets/portfolio/ebit_portfolio_satellogic-wernher.jpg" class="visible content">
+      {{/ebit-portfolio-card}}
+
+      {{#ebit-portfolio-card
+        cliente="Satellogic"
+        producto="Korolev"
+        descripcion=(t "epcSatellogicKorolev")
+        tecnologias="django, ember, semantic, tachyons, postgres, rest"
+        tags="devel software satellogic"
+        url=false
+        client_url="https://www.satellogic.com/"
+      }}
+        <img src="/assets/portfolio/ebit_portfolio_satellogic-korolev.jpg" class="visible content">
+      {{/ebit-portfolio-card}}
 
     {{#ebit-portfolio-card
       cliente="Agencia Presentes"
@@ -82,39 +124,19 @@
     {{/ebit-portfolio-card}}
 
     {{#ebit-portfolio-card
-      cliente="Satellogic"
-      producto="Wernher"
-      descripcion=(t "epcSatellogicWernher")
-      tecnologias="django, tachyons, postgres"
-      tags="devel software satellogic"
-      url=false
-      client_url="https://www.satellogic.com/"
+      cliente="Agencia Presentes"
+      producto="Candidates 2019"
+      descripcion=(t "epcPresentesCandidates2019")
+      tecnologias="django, ember, postgres, rest, tachyons, osm"
+      tags="devel software social presentes"
+      url="https://candidates2019.agenciapresentes.org"
+      client_url="https://agenciapresentes.com.ar"
+      nota=false
     }}
-      <img src="/assets/portfolio/ebit_portfolio_satellogic-wernher.jpg" class="visible content">
+      <img src="/assets/portfolio/ebit_portfolio_presentes-candidates.jpg" class="visible content">
     {{/ebit-portfolio-card}}
 
-    {{#ebit-portfolio-card
-      cliente="Satellogic"
-      producto="Korolev"
-      descripcion=(t "epcSatellogicKorolev")
-      tecnologias="django, ember, semantic, tachyons, postgres, rest"
-      tags="devel software satellogic"
-      url=false
-      client_url="https://www.satellogic.com/"
-    }}
-      <img src="/assets/portfolio/ebit_portfolio_satellogic-korolev.jpg" class="visible content">
-    {{/ebit-portfolio-card}}
 
-    {{#ebit-portfolio-card
-      cliente="Dirección Nacional de Museos"
-      producto="RMA"
-      descripcion=(t "epcRMA")
-      tecnologias="django, ember, semantic, postgres, rest"
-      tags="devel software web dnm"
-      url="https://rma.cultura.gob.ar"
-    }}
-      <img src="/assets/portfolio/ebit_portfolio_dnm-rma.jpg" class="visible content">
-    {{/ebit-portfolio-card}}
 
     {{#ebit-portfolio-card
       cliente="Dirección de Innovación y Tecnología Educativa"
@@ -137,8 +159,8 @@
     }}
       <img src="/assets/portfolio/ebit_portfolio_dite-suite.jpg" class="visible content">
     {{/ebit-portfolio-card}}
-
-    <!-- {{#ebit-portfolio-card
+{{!--
+    {{#ebit-portfolio-card
       cliente="InterCement"
       producto="Dash CEO"
       descripcion="Asistimos al área de Busines Intelligence de Intercement en el diseño UI/UX, prototipado e implementación de un dashboard para monitoreo de datos en tiempo real a nivel mundial. Actualmente estamos trabajando en la versión 2 del producto e implementando una capa de datos para integrar SAP a futuros desarrollos."
@@ -147,31 +169,7 @@
       url=false
     }}
     <img src="/assets/portfolio/ebit_portfolio_intercement-dashceo.jpg" class="visible content">
-    {{/ebit-portfolio-card}} -->
-
-    {{#ebit-portfolio-card
-      cliente="Spectro Location Intelligence"
-      producto="Pulse"
-      descripcion=(t "epcPulse")
-      tecnologias="django, ember"
-      tags="software spectro"
-      url=false
-      proyectoBlog=false
-    }}
-      <img src="/assets/portfolio/ebit_portfolio_spectro-pulse.jpg" class="visible content">
-    {{/ebit-portfolio-card}}
-
-    {{#ebit-portfolio-card
-      cliente="Spectro Location Intelligence"
-      producto="Spectro WebCommands"
-      descripcion=(t "epcSpectroWebCommands")
-      tecnologias="flask, sqlalchemy, ember, mirage, bootstrap"
-      tags="software spectro"
-      url=false
-      proyectoBlog="http://blog.enjambrelab.com.ar/creando-api-con-flask/"
-    }}
-      <img src="/assets/portfolio/ebit_portfolio_spectro-webcommands.jpg" class="visible content">
-    {{/ebit-portfolio-card}}
+    {{/ebit-portfolio-card}} --}}
 
     {{#ebit-portfolio-card
       cliente="Fundación Sadosky"
@@ -180,6 +178,7 @@
       tecnologias="nodejs, electron, inkscape"
       tags="tics pilas devel multimedia design sadosky"
       url="http://pilasbloques.program.ar/"
+      client_url="http://www.fundacionsadosky.org.ar/"
     }}
       <img src="/assets/portfolio/ebit_portfolio_sadosky-pilas-bloques.jpg" class="visible content">
     {{/ebit-portfolio-card}}
@@ -190,6 +189,7 @@
       descripcion=(t "epcPilasBloquesJr")
       tecnologias="nodejs, electron, inkscape"
       tags="tics pilas devel multimedia design sadosky"
+      client_url="http://www.fundacionsadosky.org.ar/"
     }}
       <img src="/assets/portfolio/ebit_portfolio_sadosky-pilas-bloques-jr.jpg" class="visible content">
     {{/ebit-portfolio-card}}
@@ -200,9 +200,22 @@
       descripcion=(t "epcIGM")
       tecnologias="html, drupal"
       tags="software web wdf"
-      url="http://fdm.rio20.net/?q=es/node/2115"
+      url=false
+      client_url="https://world-governance.org/"
     }}
       <img src="/assets/portfolio/ebit_portfolio_wdf-mapa-igm.jpg" class="visible content">
+    {{/ebit-portfolio-card}}
+
+    {{#ebit-portfolio-card
+      cliente="SoyFinisher"
+      producto="SoyFinisher"
+      descripcion=(t "epcSoyFinisher")
+      tecnologias="ember, electron, bootstrap"
+      tags="software devel web soyfinisher"
+      url="https://www.soyfinisher.com/"
+      client_url="https://www.soyfinisher.com/"
+    }}
+      <img src="/assets/portfolio/ebit_portfolio_soyfinisher.jpg" class="visible content">
     {{/ebit-portfolio-card}}
 
     {{#ebit-portfolio-card
@@ -212,7 +225,8 @@
       tecnologias="django, bootstrap, sqlite, inkscape, gimp, blender, kdenlive, audacity"
       tags="software devel design multimedia farias"
       proyectoBlog="http://blog.enjambrelab.com.ar/podcast-igualdad/"
-      url="http://podcast.digitalh.com.ar"
+      nota="http://blog.enjambrelab.com.ar/podcast-igualdad/"
+      url=false
     }}
       <img src="/assets/portfolio/ebit_portfolio_podcast-igualdad.jpg" class="visible content">
     {{/ebit-portfolio-card}}
@@ -225,6 +239,7 @@
       tecnologias="django, ember, semantic, postgres, inkscape, gimp"
       proyectoBlog=false
       url="http://www.sergiodenis.com.ar"
+      client_url="http://www.sergiodenis.com.ar"
     }}
       <img src="/assets/portfolio/ebit_portfolio_sergio-denis.jpg" class="visible content">
     {{/ebit-portfolio-card}}
@@ -241,5 +256,30 @@
       <img src="/assets/portfolio/ebit_portfolio_berko.jpg" class="visible content">
     {{/ebit-portfolio-card}}
 
+
+        {{#ebit-portfolio-card
+          cliente="Spectro Location Intelligence"
+          producto="Pulse"
+          descripcion=(t "epcPulse")
+          tecnologias="django, ember"
+          tags="software spectro"
+          url=false
+          proyectoBlog=false
+        }}
+          <img src="/assets/portfolio/ebit_portfolio_spectro-pulse.jpg" class="visible content">
+        {{/ebit-portfolio-card}}
+
+        {{#ebit-portfolio-card
+          cliente="Spectro Location Intelligence"
+          producto="Spectro WebCommands"
+          descripcion=(t "epcSpectroWebCommands")
+          tecnologias="flask, sqlalchemy, ember, mirage, bootstrap"
+          tags="software spectro"
+          url=false
+          proyectoBlog="http://blog.enjambrelab.com.ar/creando-api-con-flask/"
+          nota="http://blog.enjambrelab.com.ar/creando-api-con-flask/"
+        }}
+          <img src="/assets/portfolio/ebit_portfolio_spectro-webcommands.jpg" class="visible content">
+        {{/ebit-portfolio-card}}
 
   </div>

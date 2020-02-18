@@ -28,9 +28,15 @@ export default {
   // Titulos y alts de imágenes
   epcLeerMasEnElBlog: "Leer más en el Blog",
   epcVerNota: "Ver nota",
+  epcVerMas: "Ver más",
 
   // Tags de trabajos
   tagTodo: "Todo",
+  tagTodos: "Todos",
+  tagTodas: "Todas",
+  tagCategorias: "Categorías",
+  tagClientes: "Clientes",
+  tagNuestrosClientes: "Nuestros Clientes",
   tagTics: "Educación",
   tagWeb: "Web",
   tagDevel: "Desarrollo",
@@ -74,6 +80,8 @@ export default {
     "Diseñamos y desarrollamos el sitio web oficial del cantante. También generamos material gráfico y administramos las redes sociales.",
   epcBerko:
     "Diseñamos y desarrollamos el sitio web institucional de la compañía.",
+  epcSoyFinisher:
+    "SoyFinisher es un sistema de venta de imágenes deportivas vía web. Desde Enjambre, nos ocupamos del soporte y desarrollo de mejoras de la plataforma, tanto el frontend web para clientes como de la app de escritorio que se usa para subir y etiquetar las fotos.",
 
   // Sumate
   SumateAlEnjambre: "Sumate al Enjambre",

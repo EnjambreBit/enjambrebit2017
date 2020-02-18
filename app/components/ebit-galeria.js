@@ -3,9 +3,12 @@ import Ember from "ember";
 export default Ember.Component.extend({
   tagName: "",
   didInsertElement() {
-    var $container = Ember.$(".grid");
-    $container.imagesLoaded(function() {
-      $container.isotope({
+    var contenedor = Ember.$(".grid");
+    var filters = {};
+    contenedor.imagesLoaded(function() {
+      contenedor.isotope({
+        percentPosition: true,
+        transitionDuration: "0.7s",
         itemSelector: ".column",
         layoutMode: "fitRows"
       });
@@ -14,14 +17,22 @@ export default Ember.Component.extend({
     Ember.$(
       ".isotope-filter .filter.categorias li a, .isotope-filter .filter.clientes li a"
     ).click(function() {
-      Ember.$(".isotope-filter .filter li a").removeClass("active");
+      var classGroup = this.parentElement.parentElement.classList[1];
+      $(".filter." + classGroup + " li a").removeClass("active");
+      $(this).toggleClass("active");
 
-      Ember.$(this).addClass("active");
+      var $this = $(this);
+
+      var buttonGroup = $this.parents(".button-group");
+      var filterGroup = buttonGroup.attr("data-filter-group");
+
+      filters[filterGroup] = $this.attr("data-filter");
 
       var selector = Ember.$(this).attr("data-filter");
-      $container.isotope({
+      contenedor.isotope({
         filter: selector
       });
+
       return false;
     });
   }

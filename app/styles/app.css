@@ -33,6 +33,52 @@ html {
   text-align: justify;
 }
 
+.tc {
+  text-align: center;
+}
+
+.h-40 {
+  height: 40px;
+}
+
+.v-mid {
+  vertical-align: middle;
+}
+
+.ttu {
+  text-transform: uppercase;
+}
+
+.red {
+  color: rgb(220, 0, 0);
+}
+
+.mb0 {
+  margin-bottom: 0 !important;
+}
+.mb1 {
+  margin-bottom: 0.5rem;
+}
+
+.dib {
+  display: inline-block;
+}
+
+.desaturate {
+  filter: grayscale(100%);
+}
+.full-color {
+  filter: grayscale(0%);
+}
+
+.hidden {
+  display: none;
+}
+
+.logo-cliente {
+  display: none;
+}
+
 /* Home */
 #2d_bg,
 #design_bg,
@@ -344,13 +390,16 @@ h4.ui.header .sub.header {
 /*-----------------------------------------------------------------------------------*/
 /*      PORTFOLIO
 /*-----------------------------------------------------------------------------------*/
-.filter,
-.filter-clientes {
+
+ul.filter {
+  padding-inline-start: 0;
+}
+
+.filter {
   list-style: none;
   margin: 0 0 20px 0;
 }
-.filter li,
-.filter-clientes li {
+.filter li {
   display: inline;
   font-weight: 700;
   font-size: 12px;
@@ -358,24 +407,21 @@ h4.ui.header .sub.header {
   line-height: 1;
   color: #c5c5c5;
 }
-.filter li:after,
-.filter-clientes li:after {
+.filter li:after {
   display: inline-block;
-  content: "/";
+  content: "";
   padding: 0 8px 0 8px;
 }
-.filter li a,
-.filter-clientes li a {
+
+.filter li a {
   color: #656565;
 }
 .filter li a.active,
-.filter li a:hover,
-.filter-clientes li a:active,
-.filter-clientes li a:hover {
+.filter li a:hover {
   color: rgb(220, 0, 0);
+  filter: grayscale(0);
 }
-.filter li:last-child:after,
-.filter-clientes li:last-chid:after {
+.filter li:last-child:after {
   display: none;
 }
 
@@ -463,6 +509,14 @@ h4.ui.header .sub.header {
   text-align: center;
   padding: 5px 0 3px 0;
   color: #666;
+}
+
+h3.ui.red.header.portfolio {
+  margin-bottom: 0 !important;
+}
+
+.portfolio-cliente {
+  font-size: 0.85rem !important;
 }
 
 .ebit-portfolio-descripcion {

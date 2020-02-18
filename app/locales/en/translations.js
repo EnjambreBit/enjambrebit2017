@@ -29,13 +29,20 @@ export default {
   // Titulos y alts de imágenes
   epcLeerMasEnElBlog: "Read more on our Blog",
   epcVerNota: "View article",
+  epcVerMas: "View more",
 
   // Tags de trabajos
   tagTodo: "All",
+  tagTodos: "All",
+  tagTodas: "All",
+  tagCategorias: "Categories",
+  tagClientes: "Clients",
+  tagNuestrosClientes: "Our Clients",
   tagTics: "Education",
   tagWeb: "Web",
   tagDevel: "Development",
   tagSoftware: "Custom Software",
+  tagPilasEngine: "Pilas Engine",
   tagMultimedia: "2D, 3D & Multimedia",
   tagDesign: "Design",
   tagMobile: "Mobile",
@@ -78,6 +85,8 @@ export default {
     "We designed and programmed the singers official website. We also create graphical material and do social media.",
   epcBerko:
     "We designed and developed the institutional website for the company.",
+  epcSoyFinisher:
+    "SoyFinisher is a system to sell sport images via web. From Enjambre, we take care of support and development of new features for the platform. We work on the client web frontend as well as the desktop app that is used to upload and tag the pictures.",
 
   // Sumate
   SumateAlEnjambre: "Join Enjambre",

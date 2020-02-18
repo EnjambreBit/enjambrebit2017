@@ -28,29 +28,29 @@
       </div>
     {{/if}}
     <div class="content">
-      <h4 class="ui red header">
+      <h3 class="ui red header mb0">
         {{#if url}}
           <a href="{{url}}" target="_blank" title="{{producto}}">{{producto}}</a>
         {{else}}
           {{producto}}
         {{/if}}
-        <div class="ui sub header">
-          <span class="">Cliente: </span>
-          {{#if client_url}}
-            <a href="{{client_url}}" target="_blank" title="{{cliente}}" class="link-gris">{{cliente}}</a>
-          {{else}}
-            {{cliente}}
-          {{/if}}
-        </div>
-        {{#if nota}}
-          <div class="meta">
-            <a href="{{nota}}" href="{{nota}}" target="_blank" title="{{t 'epcVerNota'}}">Ver más</a>
-          </div>
+      </h3>
+      <div class="portfolio-cliente">
+        <span class="">Cliente: </span>
+        {{#if client_url}}
+          <a href="{{client_url}}" target="_blank" title="{{cliente}}" class="link-gris">{{cliente}}</a>
         {{else}}
-          <div class="nota_placeholder">
-          </div>
+          {{cliente}}
         {{/if}}
-      </h4>
+      </div>
+      {{#if nota}}
+        <div class="meta mb1">
+          <a href="{{nota}}" href="{{nota}}" target="_blank" title="{{t 'epcVerNota'}}"><small>{{t 'epcVerMas'}}</small></a>
+        </div>
+      {{else}}
+        <div class="nota_placeholder">
+        </div>
+      {{/if}}
 
       <div class="meta">
         <span class="ebit-portfolio-descripcion">{{descripcion}}</span>
