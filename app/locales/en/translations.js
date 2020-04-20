@@ -49,6 +49,8 @@ export default {
   tagSocial: "Social",
 
   // Portfolio-cards
+  epcEdelvivesSofubloques:
+    "We commercially associated with Edelvives Argentina to develop an app that allows teaching and learning block programming for the first cycle, as a complement to SOFUBI, a series of books dedicated to elementary education.",
   epcPresentesMapaLGBT:
     "Along with Presentes, a regional LGBT+ news agency, we developed a web platform to map violence cases all around the country.",
   epcPresentesCandidates2019:

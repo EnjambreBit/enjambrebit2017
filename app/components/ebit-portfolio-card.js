@@ -100,6 +100,18 @@ export default Ember.Component.extend({
         name = "Tachyons";
         url = "https://tachyons.io";
       }
+      if (tec === "pilas") {
+        name = "Pilas Engine";
+        url = "https://enjambrebit.com.ar/#/app/pilas";
+      }
+      if (tec === "blockly") {
+        name = "Blockly";
+        url = "https://developers.google.com/blockly";
+      }
+      if (tec === "spriter") {
+        name = "Spriter";
+        url = "https://brashmonkey.com/spriter-pro/";
+      }
       tec_list.push({ slug: tec, name: name, url: url });
     });
     return tec_list;
