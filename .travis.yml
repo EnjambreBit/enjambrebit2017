@@ -1,13 +1,29 @@
 ---
 language: node_js
 node_js:
-  - "6"
+  - "10"
 
+<<<<<<< HEAD
 sudo: false
+=======
+dist: trusty
+
+addons:
+  chrome: stable
+>>>>>>> 9ec85e0... v2.15.1...v3.18.0
 
 cache:
   directories:
     - $HOME/.npm
+
+env:
+  global:
+    # See https://git.io/vdao3 for details.
+    - JOBS=1
+
+branches:
+  only:
+    - master
 
 before_install:
   - npm config set spin false

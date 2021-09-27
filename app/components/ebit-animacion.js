@@ -1,6 +1,6 @@
-import Ember from "ember";
+import Component from '@ember/component';
 
-export default Ember.Component.extend({
+export default Component.extend({
   // Otras animaciones posibles: https://semantic-ui.com/modules/transition.html
   nombre: "scale in",
 

@@ -1,21 +1,21 @@
-{{#link-to "app.index" class="item" current-when="app.index"}}
-  Enjambre Bit{{/link-to}}
+<LinkTo @route="app.index" class="item" @current-when="app.index">
+  Enjambre Bit</LinkTo>
 <!-- {{#link-to "app.que-hacemos" class="item" current-when="app.que-hacemos"}}Qué hacemos{{/link-to}} -->
-{{#link-to "app.portfolio" class="item" current-when="app.portfolio"}}
+<LinkTo @route="app.portfolio" class="item" @current-when="app.portfolio">
   {{#if (media 'isMobile')}}
     <i class="ui folder open icon"></i>
   {{/if}}
   {{t "Trabajos"}}
-{{/link-to}}
+</LinkTo>
 
 <!-- {{#link-to "app.lab" class="item" current-when="app.lab"}}Lab{{/link-to}} -->
 
-{{#link-to "app.pilas" class="item" current-when="app.pilas"}}
+<LinkTo @route="app.pilas" class="item" @current-when="app.pilas">
   {{#if (media 'isMobile')}}
     <i class="ui battery full icon"></i>
   {{/if}}
   Pilas Engine 2
-{{/link-to}}
+</LinkTo>
 
 <a class="item"  href="http://blog.enjambrelab.com.ar/" target="_blank" title="{{t "NuestroBlogDeDesarrollo"}}">
   {{#if (media 'isMobile')}}

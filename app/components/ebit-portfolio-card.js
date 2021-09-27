@@ -1,9 +1,11 @@
-import Ember from "ember";
+import $ from 'jquery';
+import { computed } from '@ember/object';
+import Component from '@ember/component';
 
-export default Ember.Component.extend({
+export default Component.extend({
   tagName: "",
-  tecIcons: Ember.computed("tecnologias", function() {
-    let tecs = this.get("tecnologias").split(", ");
+  tecIcons: computed("tecnologias", function() {
+    let tecs = this.tecnologias.split(", ");
     var tec_list = [];
     let name = "";
     let url = "";
@@ -117,7 +119,7 @@ export default Ember.Component.extend({
     return tec_list;
   }),
   didInsertElement() {
-    Ember.$(".fluid.card .image.ebit-blog").dimmer({
+    $(".fluid.card .image.ebit-blog").dimmer({
       on: "hover"
     });
   }

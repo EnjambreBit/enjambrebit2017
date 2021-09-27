@@ -1,9 +1,10 @@
-import Ember from "ember";
+import $ from 'jquery';
+import Component from '@ember/component';
 
-export default Ember.Component.extend({
+export default Component.extend({
   tagName: "",
   didInsertElement() {
-    var contenedor = Ember.$(".grid");
+    var contenedor = $(".grid");
     var filters = {};
     contenedor.imagesLoaded(function() {
       contenedor.isotope({
@@ -14,7 +15,7 @@ export default Ember.Component.extend({
       });
     });
 
-    Ember.$(
+    $(
       ".isotope-filter .filter.categorias li a, .isotope-filter .filter.clientes li a"
     ).click(function() {
       var classGroup = this.parentElement.parentElement.classList[1];
@@ -28,7 +29,7 @@ export default Ember.Component.extend({
 
       filters[filterGroup] = $this.attr("data-filter");
 
-      var selector = Ember.$(this).attr("data-filter");
+      var selector = $(this).attr("data-filter");
       contenedor.isotope({
         filter: selector
       });

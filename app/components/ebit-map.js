@@ -1,6 +1,6 @@
-import Ember from "ember";
+import Component from '@ember/component';
 
-export default Ember.Component.extend({
+export default Component.extend({
   tagName: "",
   // This example creates a simple polygon representing the Bermuda Triangle.
 

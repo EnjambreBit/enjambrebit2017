@@ -1,12 +1,13 @@
-import Ember from "ember";
+import $ from 'jquery';
+import Component from '@ember/component';
 
-export default Ember.Component.extend({
+export default Component.extend({
   tagName: "",
   didInsertElement() {
-    Ember.$("#sub-sidebar a").off("click");
+    $("#sub-sidebar a").off("click");
 
-    Ember.$("#sub-sidebar a").on("click", function() {
-      Ember.$("#sub-sidebar").sidebar("hide");
+    $("#sub-sidebar a").on("click", function() {
+      $("#sub-sidebar").sidebar("hide");
     });
   }
 });

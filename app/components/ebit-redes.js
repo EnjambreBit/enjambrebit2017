@@ -1,7 +1,7 @@
-import Ember from "ember";
+import Component from '@ember/component';
 import { inject as service } from "@ember/service";
 
-export default Ember.Component.extend({
+export default Component.extend({
   i18n: service(),
   tagName: "",
   actions: {

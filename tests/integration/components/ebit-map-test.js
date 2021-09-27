@@ -1,11 +1,13 @@
-import { moduleForComponent, test } from "ember-qunit";
+import { module, test } from 'qunit';
+import { setupRenderingTest } from "ember-qunit";
+import { render } from '@ember/test-helpers';
 import hbs from "htmlbars-inline-precompile";
 
-moduleForComponent("ebit-map", "Integration | Component | ebit map", {
-  integration: true
-});
+module("Integration | Component | ebit map", function(hooks) {
+  setupRenderingTest(hooks);
 
-test("it renders", function(assert) {
-  this.render(hbs`{{ebit-map}}`);
-  assert.ok(this.$());
+  test("it renders", async function(assert) {
+    await render(hbs`{{ebit-map}}`);
+    assert.ok(this.$());
+  });
 });

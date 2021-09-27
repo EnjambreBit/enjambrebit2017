@@ -1,12 +1,13 @@
-import Ember from 'ember';
+import $ from 'jquery';
+import Component from '@ember/component';
 
-export default Ember.Component.extend({
+export default Component.extend({
   actions: {
     abrirMenu() {
-      Ember.$(".ui.sidebar").sidebar("show");
+      $(".ui.sidebar").sidebar("show");
     },
     cerrarMenu() {
-      Ember.$(".ui.sidebar").sidebar("hide");
+      $(".ui.sidebar").sidebar("hide");
     }
   }
 });

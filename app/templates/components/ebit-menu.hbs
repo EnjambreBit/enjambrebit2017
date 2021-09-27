@@ -1,10 +1,10 @@
-{{#ui-sidebar class="left inverted vertical menu" mobileTransition="overlay" transition="overlay" context=element id="menu"  }}
+<UiSidebar @class="left inverted vertical menu" @mobileTransition="overlay" @transition="overlay" @context={{element}} @id="menu">
 
     <span {{action 'cerrarMenu'}}>
-      {{ebit-secciones-del-menu}}
+      <EbitSeccionesDelMenu />
     </span>
 
-{{/ui-sidebar}}
+</UiSidebar>
 
 <div class="pusher">
 

@@ -1,15 +1,16 @@
-import Ember from "ember";
+import $ from 'jquery';
+import Controller from '@ember/controller';
 
 const ANCHO_PARA_MOBILE = 768;
 
-export default Ember.Controller.extend({
+export default Controller.extend({
   init() {
     this.set("mostrarNavbar", window.innerWidth > ANCHO_PARA_MOBILE);
 
-    Ember.$(window).on("resize", () => {
+    $(window).on("resize", () => {
       var mostrarNavbar = window.innerWidth > ANCHO_PARA_MOBILE;
 
-      if (mostrarNavbar !== this.get("mostrarNavbar")) {
+      if (mostrarNavbar !== this.mostrarNavbar) {
         this.set("mostrarNavbar", mostrarNavbar);
       }
     });

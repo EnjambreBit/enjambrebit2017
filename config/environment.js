@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /* eslint-env node */
+=======
+'use strict';
+>>>>>>> 9ec85e0... v2.15.1...v3.18.0
 
 module.exports = function(environment) {
   var ENV = {
@@ -12,7 +16,7 @@ module.exports = function(environment) {
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
-        // e.g. 'with-controller': true
+        // e.g. EMBER_NATIVE_DECORATOR_SUPPORT: true
       },
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
@@ -47,10 +51,19 @@ module.exports = function(environment) {
     ENV.APP.LOG_ACTIVE_GENERATION = false;
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
+<<<<<<< HEAD
     ENV.APP.rootElement = "#ember-testing";
   }
 
   if (environment === "production") {
+=======
+    ENV.APP.rootElement = '#ember-testing';
+    ENV.APP.autoboot = false;
+  }
+
+  if (environment === 'production') {
+    // here you can enable a production-specific feature
+>>>>>>> 9ec85e0... v2.15.1...v3.18.0
   }
 
   return ENV;
